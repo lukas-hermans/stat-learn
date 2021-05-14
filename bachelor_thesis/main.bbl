@@ -1,0 +1,752 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{Zaccai2017}{book}{}
+      \name{author}{3}{}{%
+        {{hash=af6a6c474a1425594a9eb58af20b0f5f}{%
+           family={Zaccai},
+           familyi={Z\bibinitperiod},
+           given={Nathan\bibnamedelima R.},
+           giveni={N\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=251aa92bb7660004a4088b9078d76fcf}{%
+           family={Serdyuk},
+           familyi={S\bibinitperiod},
+           given={Igor\bibnamedelima N.},
+           giveni={I\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=27d537f0a48e5df6f6d88144f5d68e39}{%
+           family={Zaccai},
+           familyi={Z\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge, UK}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{b6238843151add555b0f67a357a11b7b}
+      \strng{fullhash}{b6238843151add555b0f67a357a11b7b}
+      \strng{bibnamehash}{b6238843151add555b0f67a357a11b7b}
+      \strng{authorbibnamehash}{b6238843151add555b0f67a357a11b7b}
+      \strng{authornamehash}{b6238843151add555b0f67a357a11b7b}
+      \strng{authorfullhash}{b6238843151add555b0f67a357a11b7b}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Second Edition}
+      \field{isbn}{978-1-107-05637-4}
+      \field{month}{5}
+      \field{title}{Methods in Molecular Biophysics}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.1017/9781107297227
+      \endverb
+    \endentry
+    \entry{Lakowicz2006}{book}{}
+      \name{author}{1}{}{%
+        {{hash=b86c8be1b6c46f7d4c8b0c6956236e75}{%
+           family={Lakowicz},
+           familyi={L\bibinitperiod},
+           given={Joseph\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, USA}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{b86c8be1b6c46f7d4c8b0c6956236e75}
+      \strng{fullhash}{b86c8be1b6c46f7d4c8b0c6956236e75}
+      \strng{bibnamehash}{b86c8be1b6c46f7d4c8b0c6956236e75}
+      \strng{authorbibnamehash}{b86c8be1b6c46f7d4c8b0c6956236e75}
+      \strng{authornamehash}{b86c8be1b6c46f7d4c8b0c6956236e75}
+      \strng{authorfullhash}{b86c8be1b6c46f7d4c8b0c6956236e75}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Third Edition}
+      \field{isbn}{978-0387-31278-1}
+      \field{title}{Principles of Fluorescence Spectroscopy}
+      \field{year}{2006}
+    \endentry
+    \entry{Hoefig2020}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=05e15506ea55da8fd3d7f8258237cc90}{%
+           family={Höfig},
+           familyi={H\bibinitperiod},
+           given={Henning},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {RWTH Aachen, Germany}%
+      }
+      \strng{namehash}{05e15506ea55da8fd3d7f8258237cc90}
+      \strng{fullhash}{05e15506ea55da8fd3d7f8258237cc90}
+      \strng{bibnamehash}{05e15506ea55da8fd3d7f8258237cc90}
+      \strng{authorbibnamehash}{05e15506ea55da8fd3d7f8258237cc90}
+      \strng{authornamehash}{05e15506ea55da8fd3d7f8258237cc90}
+      \strng{authorfullhash}{05e15506ea55da8fd3d7f8258237cc90}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Single-Molecule Characterizationof FRET-based Biosensors and Development of Two-Color Coincidence Detection}
+      \field{type}{phdthesis}
+      \field{year}{2020}
+    \endentry
+    \entry{Gopich2008}{article}{}
+      \name{author}{1}{}{%
+        {{hash=39bc6cbd12889ab97606ff186259fff7}{%
+           family={Gopich},
+           familyi={G\bibinitperiod},
+           given={Irina\bibnamedelima V.},
+           giveni={I\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Chemical Society ({ACS})}%
+      }
+      \strng{namehash}{39bc6cbd12889ab97606ff186259fff7}
+      \strng{fullhash}{39bc6cbd12889ab97606ff186259fff7}
+      \strng{bibnamehash}{39bc6cbd12889ab97606ff186259fff7}
+      \strng{authorbibnamehash}{39bc6cbd12889ab97606ff186259fff7}
+      \strng{authornamehash}{39bc6cbd12889ab97606ff186259fff7}
+      \strng{authorfullhash}{39bc6cbd12889ab97606ff186259fff7}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Physical Chemistry B}
+      \field{month}{5}
+      \field{number}{19}
+      \field{title}{Concentration Effects in Single-Molecule Spectroscopy}
+      \field{volume}{112}
+      \field{year}{2008}
+      \field{pages}{6214\bibrangedash 6220}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1021/jp0764182
+      \endverb
+    \endentry
+    \entry{Li1972}{article}{}
+      \name{author}{2}{}{%
+        {{hash=167a2a4880ce27a4c05cc8c9c9bb68c6}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=c798a936406544f34514f4b031f3564e}{%
+           family={Lim},
+           familyi={L\bibinitperiod},
+           given={E.\bibnamedelimi C.},
+           giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {{AIP} Publishing}%
+      }
+      \strng{namehash}{9771ddc35a2ce8a15f47a06fe3733ddf}
+      \strng{fullhash}{9771ddc35a2ce8a15f47a06fe3733ddf}
+      \strng{bibnamehash}{9771ddc35a2ce8a15f47a06fe3733ddf}
+      \strng{authorbibnamehash}{9771ddc35a2ce8a15f47a06fe3733ddf}
+      \strng{authornamehash}{9771ddc35a2ce8a15f47a06fe3733ddf}
+      \strng{authorfullhash}{9771ddc35a2ce8a15f47a06fe3733ddf}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Chemical Physics}
+      \field{month}{7}
+      \field{number}{2}
+      \field{title}{Quantitative Study of Luminescence in Aromatic and Heteroaromatic Molecules}
+      \field{volume}{57}
+      \field{year}{1972}
+      \field{pages}{605\bibrangedash 612}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1063/1.1678291
+      \endverb
+    \endentry
+    \entry{Lichtman2005}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4db698cad501daa9ff52b786fc9bdd78}{%
+           family={Lichtman},
+           familyi={L\bibinitperiod},
+           given={Jeff\bibnamedelima W},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=40766a3772eeb6b6c3dc9a5bd26681d2}{%
+           family={Conchello},
+           familyi={C\bibinitperiod},
+           given={Jos{é}-Angel},
+           giveni={J\bibinithyphendelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media {LLC}}%
+      }
+      \strng{namehash}{76de64cfdebeb4580cc5471004cc3af2}
+      \strng{fullhash}{76de64cfdebeb4580cc5471004cc3af2}
+      \strng{bibnamehash}{76de64cfdebeb4580cc5471004cc3af2}
+      \strng{authorbibnamehash}{76de64cfdebeb4580cc5471004cc3af2}
+      \strng{authornamehash}{76de64cfdebeb4580cc5471004cc3af2}
+      \strng{authorfullhash}{76de64cfdebeb4580cc5471004cc3af2}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Methods}
+      \field{month}{11}
+      \field{number}{12}
+      \field{title}{Fluorescence microscopy}
+      \field{volume}{2}
+      \field{year}{2005}
+      \field{pages}{910\bibrangedash 919}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1038/nmeth817
+      \endverb
+    \endentry
+    \entry{Alexa647_Spectra}{online}{}
+      \name{author}{1}{}{%
+        {{hash=e2d9de7723d1037ab03ce0c3100453d1}{%
+           family={{Thermo Fisher Scientific Inc.}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{e2d9de7723d1037ab03ce0c3100453d1}
+      \strng{fullhash}{e2d9de7723d1037ab03ce0c3100453d1}
+      \strng{bibnamehash}{e2d9de7723d1037ab03ce0c3100453d1}
+      \strng{authorbibnamehash}{e2d9de7723d1037ab03ce0c3100453d1}
+      \strng{authornamehash}{e2d9de7723d1037ab03ce0c3100453d1}
+      \strng{authorfullhash}{e2d9de7723d1037ab03ce0c3100453d1}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Fluorescence SpectraViewer}
+      \field{urlday}{16}
+      \field{urlmonth}{6}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.thermofisher.com/de/de/home/life-science/cell-analysis/labeling-chemistry/fluorescence-spectraviewer.html?SID=srch-svtool&UID=21235p72#!/
+      \endverb
+      \verb{url}
+      \verb https://www.thermofisher.com/de/de/home/life-science/cell-analysis/labeling-chemistry/fluorescence-spectraviewer.html?SID=srch-svtool&UID=21235p72#!/
+      \endverb
+    \endentry
+    \entry{CountT}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=027aa3043b9ee7425e5396a085eb488e}{%
+           family={{Laser Components GmbH}},
+           familyi={L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Olching, Germany}%
+      }
+      \strng{namehash}{027aa3043b9ee7425e5396a085eb488e}
+      \strng{fullhash}{027aa3043b9ee7425e5396a085eb488e}
+      \strng{bibnamehash}{027aa3043b9ee7425e5396a085eb488e}
+      \strng{authorbibnamehash}{027aa3043b9ee7425e5396a085eb488e}
+      \strng{authornamehash}{027aa3043b9ee7425e5396a085eb488e}
+      \strng{authorfullhash}{027aa3043b9ee7425e5396a085eb488e}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Product Sheet}
+      \field{title}{Single Photon Counting Module COUNT T-Series}
+    \endentry
+    \entry{tauSPAD}{manual}{}
+      \list{location}{1}{%
+        {PicoQuant GmbH, Berlin, Germany}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labeltitlesource}{title}
+      \field{note}{Product Sheet}
+      \field{title}{$\tau$-SPAD: Single Photon Counting Module}
+    \endentry
+    \entry{MicroTime200}{manual}{}
+      \list{location}{1}{%
+        {PicoQuant GmbH, Berlin, Germany}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labeltitlesource}{title}
+      \field{edition}{Version 6.1}
+      \field{note}{Manual}
+      \field{title}{MicroTime 200: Fluorescence Lifetime Microscope}
+    \endentry
+    \entry{Schwille2001}{article}{}
+      \name{author}{2}{}{%
+        {{hash=e5ef1d5b35a8e3436eb2c239a5fb5a64}{%
+           family={Schwille},
+           familyi={S\bibinitperiod},
+           given={Petra},
+           giveni={P\bibinitperiod}}}%
+        {{hash=d73ad50ab0c6d6fe3983a80aeb5ffc41}{%
+           family={Haustein},
+           familyi={H\bibinitperiod},
+           given={Elke},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{2015c953bd02366d47381ba2ef776458}
+      \strng{fullhash}{2015c953bd02366d47381ba2ef776458}
+      \strng{bibnamehash}{2015c953bd02366d47381ba2ef776458}
+      \strng{authorbibnamehash}{2015c953bd02366d47381ba2ef776458}
+      \strng{authornamehash}{2015c953bd02366d47381ba2ef776458}
+      \strng{authorfullhash}{2015c953bd02366d47381ba2ef776458}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Spectroscopy}
+      \field{month}{01}
+      \field{title}{Fluorescence Correlation Spectroscopy - An Introduction to its Concepts and Applications}
+      \field{volume}{94(22)}
+      \field{year}{2001}
+    \endentry
+    \entry{Mueller2005}{article}{}
+      \name{author}{4}{}{%
+        {{hash=a4fb88413eb38a84b5687082a84114b5}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={Barbara\bibnamedelima K.},
+           giveni={B\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=d1978d726bc8de049bda7bbd0d75fb53}{%
+           family={Zaychikov},
+           familyi={Z\bibinitperiod},
+           given={Evgeny},
+           giveni={E\bibinitperiod}}}%
+        {{hash=e145f07e60b67623cadf2c922477291a}{%
+           family={Bräuchle},
+           familyi={B\bibinitperiod},
+           given={Christoph},
+           giveni={C\bibinitperiod}}}%
+        {{hash=9ac4d09fa6c6b6714608f3cc82860dae}{%
+           family={Lamb},
+           familyi={L\bibinitperiod},
+           given={Don\bibnamedelima C.},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier {BV}}%
+      }
+      \strng{namehash}{32edf37b92d8f2b3b8b18041beb3cdaf}
+      \strng{fullhash}{c92c37518a4cdd30f8e0dbb5f2dc8add}
+      \strng{bibnamehash}{32edf37b92d8f2b3b8b18041beb3cdaf}
+      \strng{authorbibnamehash}{32edf37b92d8f2b3b8b18041beb3cdaf}
+      \strng{authornamehash}{32edf37b92d8f2b3b8b18041beb3cdaf}
+      \strng{authorfullhash}{c92c37518a4cdd30f8e0dbb5f2dc8add}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Biophysical Journal}
+      \field{month}{11}
+      \field{number}{5}
+      \field{title}{Pulsed Interleaved Excitation}
+      \field{volume}{89}
+      \field{year}{2005}
+      \field{pages}{3508\bibrangedash 3522}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1529/biophysj.105.064766
+      \endverb
+    \endentry
+    \entry{Wahl}{manual}{}
+      \name{author}{2}{}{%
+        {{hash=7a7599b0fb7cf979e3e39db15e9d844d}{%
+           family={Wahl},
+           familyi={W\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=313d21f34b6c63419bb8f8e7c4f78772}{%
+           family={Orthaus-Müller},
+           familyi={O\bibinithyphendelim M\bibinitperiod},
+           given={Sandra},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {PicoQuant GmbH, Berlin, Germany}%
+      }
+      \strng{namehash}{686d00059f202ac7d57581f452b528ac}
+      \strng{fullhash}{686d00059f202ac7d57581f452b528ac}
+      \strng{bibnamehash}{686d00059f202ac7d57581f452b528ac}
+      \strng{authorbibnamehash}{686d00059f202ac7d57581f452b528ac}
+      \strng{authornamehash}{686d00059f202ac7d57581f452b528ac}
+      \strng{authorfullhash}{686d00059f202ac7d57581f452b528ac}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Technical Note}
+      \field{title}{Time Tagged Time-Resolved Fluorescence Data Collection in Life Sciences}
+    \endentry
+    \entry{Kapusta2010}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=0f6518b5c2af7f2b793603b52fa6222b}{%
+           family={Kapusta},
+           familyi={K\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {PicoQuant GmbH, Berlin, Germany}%
+      }
+      \strng{namehash}{0f6518b5c2af7f2b793603b52fa6222b}
+      \strng{fullhash}{0f6518b5c2af7f2b793603b52fa6222b}
+      \strng{bibnamehash}{0f6518b5c2af7f2b793603b52fa6222b}
+      \strng{authorbibnamehash}{0f6518b5c2af7f2b793603b52fa6222b}
+      \strng{authornamehash}{0f6518b5c2af7f2b793603b52fa6222b}
+      \strng{authorfullhash}{0f6518b5c2af7f2b793603b52fa6222b}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Revision 1}
+      \field{note}{Applicatino Note}
+      \field{title}{Absolute Diffusion Coefficients: Compilation of Reference Data for FCS Calibration}
+      \field{year}{2010}
+    \endentry
+    \entry{ConfocalVolumeDetermination}{manual}{}
+      \name{author}{5}{}{%
+        {{hash=ae1f300bcdb856ade8786cad90c3530c}{%
+           family={Buschmann},
+           familyi={B\bibinitperiod},
+           given={Volker},
+           giveni={V\bibinitperiod}}}%
+        {{hash=9d9e4cecc46490d76fff399d7b34ac35}{%
+           family={Kräner},
+           familyi={K\bibinitperiod},
+           given={Benedikt},
+           giveni={B\bibinitperiod}}}%
+        {{hash=6761fa898ae8c846f3a39ade7ea91f15}{%
+           family={Koberling},
+           familyi={K\bibinitperiod},
+           given={Felix},
+           giveni={F\bibinitperiod}}}%
+        {{hash=3bba4a2af36eaca40c534eef2461ae29}{%
+           family={Macdonald},
+           familyi={M\bibinitperiod},
+           given={Rainer},
+           giveni={R\bibinitperiod}}}%
+        {{hash=0f3f7a66a0d9341bd654e9fd77a284fb}{%
+           family={Rüttinger},
+           familyi={R\bibinitperiod},
+           given={Steffen},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {PicoQuant GmbH, Berlin, Germany}%
+      }
+      \strng{namehash}{251e53cd6ffbb3315f0d67a8d71d90cd}
+      \strng{fullhash}{1abdd193051a743b5cb041c914684dcd}
+      \strng{bibnamehash}{251e53cd6ffbb3315f0d67a8d71d90cd}
+      \strng{authorbibnamehash}{251e53cd6ffbb3315f0d67a8d71d90cd}
+      \strng{authornamehash}{251e53cd6ffbb3315f0d67a8d71d90cd}
+      \strng{authorfullhash}{1abdd193051a743b5cb041c914684dcd}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Version 1.1}
+      \field{note}{Application Note}
+      \field{title}{Quantitative FCS: Determination of the Confocal Volume by FCS and Bead Scanning with the MIcroTime 200}
+      \field{year}{2009}
+    \endentry
+    \entry{Orte2010}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ecbb36f1c234a1ae625196109ff0766b}{%
+           family={Orte},
+           familyi={O\bibinitperiod},
+           given={Angel},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e8952316991afa7f59ca44f83f480c3b}{%
+           family={Clarke},
+           familyi={C\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+        {{hash=e125b0d630adf3d682adc9834c88abb7}{%
+           family={Klenerman},
+           familyi={K\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Portland Press Ltd.}%
+      }
+      \strng{namehash}{cc6f3063d875dfdebaa52d4775ca9797}
+      \strng{fullhash}{cc6f3063d875dfdebaa52d4775ca9797}
+      \strng{bibnamehash}{cc6f3063d875dfdebaa52d4775ca9797}
+      \strng{authorbibnamehash}{cc6f3063d875dfdebaa52d4775ca9797}
+      \strng{authornamehash}{cc6f3063d875dfdebaa52d4775ca9797}
+      \strng{authorfullhash}{cc6f3063d875dfdebaa52d4775ca9797}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Biochemical Society Transactions}
+      \field{month}{7}
+      \field{number}{4}
+      \field{title}{Single-molecule two-colour coincidence detection to probe biomolecular associations}
+      \field{volume}{38}
+      \field{year}{2010}
+      \field{pages}{914\bibrangedash 918}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1042/bst0380914
+      \endverb
+    \endentry
+    \entry{Hoefig2019b}{article}{}
+      \name{author}{7}{}{%
+        {{hash=05e15506ea55da8fd3d7f8258237cc90}{%
+           family={Höfig},
+           familyi={H\bibinitperiod},
+           given={Henning},
+           giveni={H\bibinitperiod}}}%
+        {{hash=0bead25008f959c54073791766e9f583}{%
+           family={Yukhnovets},
+           familyi={Y\bibinitperiod},
+           given={Olessya},
+           giveni={O\bibinitperiod}}}%
+        {{hash=06fce73974ebad644d07c8fd3f587096}{%
+           family={Remes},
+           familyi={R\bibinitperiod},
+           given={Cristina},
+           giveni={C\bibinitperiod}}}%
+        {{hash=0a35cb5e5686d0a281ebdd49ca24a06f}{%
+           family={Kempf},
+           familyi={K\bibinitperiod},
+           given={Noemie},
+           giveni={N\bibinitperiod}}}%
+        {{hash=6976ff1eac12a8d82f2e6cbc4b071c5d}{%
+           family={Katranidis},
+           familyi={K\bibinitperiod},
+           given={Alexandros},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a9c8c334bcb92453c29402a12cd12978}{%
+           family={Kempe},
+           familyi={K\bibinitperiod},
+           given={Daryan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=32557b83601b1431d7f675ed79e5ebcd}{%
+           family={Fitter},
+           familyi={F\bibinitperiod},
+           given={Jörg},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media {LLC}}%
+      }
+      \strng{namehash}{3d13a292abe420231fff5e8d75db1cb0}
+      \strng{fullhash}{3b3ada6c2717b7f34c364fe71bcca316}
+      \strng{bibnamehash}{3d13a292abe420231fff5e8d75db1cb0}
+      \strng{authorbibnamehash}{3d13a292abe420231fff5e8d75db1cb0}
+      \strng{authornamehash}{3d13a292abe420231fff5e8d75db1cb0}
+      \strng{authorfullhash}{3b3ada6c2717b7f34c364fe71bcca316}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Communications Biology}
+      \field{month}{12}
+      \field{number}{1}
+      \field{title}{Brightness-gated two-color coincidence detection unravels two distinct mechanisms in bacterial protein translation initiation}
+      \field{volume}{2}
+      \field{year}{2019}
+      \verb{doi}
+      \verb 10.1038/s42003-019-0709-7
+      \endverb
+    \endentry
+    \entry{Hoefig2019}{online}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=05e15506ea55da8fd3d7f8258237cc90}{%
+           family={Höfig},
+           familyi={H\bibinitperiod},
+           given={Henning},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{3d13a292abe420231fff5e8d75db1cb0}
+      \strng{fullhash}{3d13a292abe420231fff5e8d75db1cb0}
+      \strng{bibnamehash}{3d13a292abe420231fff5e8d75db1cb0}
+      \strng{authorbibnamehash}{3d13a292abe420231fff5e8d75db1cb0}
+      \strng{authornamehash}{3d13a292abe420231fff5e8d75db1cb0}
+      \strng{authorfullhash}{3d13a292abe420231fff5e8d75db1cb0}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{BTCCD}}
+      \field{urlday}{4}
+      \field{urlmonth}{6}
+      \field{urlyear}{2020}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/BTCCD/BTCCD
+      \endverb
+      \verb{url}
+      \verb https://github.com/BTCCD/BTCCD
+      \endverb
+    \endentry
+    \entry{Anaconda}{online}{}
+      \name{author}{1}{}{%
+        {{hash=853f30a23ce8b8cbd6946c91d67f5c78}{%
+           family={Anaconda},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{853f30a23ce8b8cbd6946c91d67f5c78}
+      \strng{fullhash}{853f30a23ce8b8cbd6946c91d67f5c78}
+      \strng{bibnamehash}{853f30a23ce8b8cbd6946c91d67f5c78}
+      \strng{authorbibnamehash}{853f30a23ce8b8cbd6946c91d67f5c78}
+      \strng{authornamehash}{853f30a23ce8b8cbd6946c91d67f5c78}
+      \strng{authorfullhash}{853f30a23ce8b8cbd6946c91d67f5c78}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Anaconda Software Distribution}}
+      \field{urlday}{28}
+      \field{urlmonth}{6}
+      \field{urlyear}{2020}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.anaconda.com/
+      \endverb
+      \verb{url}
+      \verb https://www.anaconda.com/
+      \endverb
+    \endentry
+    \entry{ZanettiDomingues2013}{article}{}
+      \name{author}{5}{}{%
+        {{hash=89fd93a6a5ae40171be34d136bc6a56f}{%
+           family={Zanetti-Domingues},
+           familyi={Z\bibinithyphendelim D\bibinitperiod},
+           given={Laura\bibnamedelima C.},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=0d1eea89cb72364a97983e927e97bac7}{%
+           family={Tynan},
+           familyi={T\bibinitperiod},
+           given={Christopher\bibnamedelima J.},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=dff182e050c79485fee7f7905eb1e558}{%
+           family={Rolfe},
+           familyi={R\bibinitperiod},
+           given={Daniel\bibnamedelima J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=ea4e9a8d0a2b0d0665922b7692d33e8d}{%
+           family={Clarke},
+           familyi={C\bibinitperiod},
+           given={David\bibnamedelima T.},
+           giveni={D\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=2db663781af285ecfa2d9010a6592f5b}{%
+           family={Martin-Fernandez},
+           familyi={M\bibinithyphendelim F\bibinitperiod},
+           given={Marisa},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Public Library of Science ({PLoS})}%
+      }
+      \strng{namehash}{8296399e6e343e89c9a836ac1cf53121}
+      \strng{fullhash}{aea817813ba70c1939ad209c93a59716}
+      \strng{bibnamehash}{8296399e6e343e89c9a836ac1cf53121}
+      \strng{authorbibnamehash}{8296399e6e343e89c9a836ac1cf53121}
+      \strng{authornamehash}{8296399e6e343e89c9a836ac1cf53121}
+      \strng{authorfullhash}{aea817813ba70c1939ad209c93a59716}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{PLoS} {ONE}}
+      \field{month}{9}
+      \field{number}{9}
+      \field{title}{Hydrophobic Fluorescent Probes Introduce Artifacts into Single Molecule Tracking Experiments Due to Non-Specific Binding}
+      \field{volume}{8}
+      \field{year}{2013}
+      \field{pages}{e74200}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1371/journal.pone.0074200
+      \endverb
+    \endentry
+    \entry{Bielec2020}{article}{}
+      \name{author}{4}{}{%
+        {{hash=f1d4067d67ab6c777aa70bb75f7bb234}{%
+           family={Bielec},
+           familyi={B\bibinitperiod},
+           given={Krzysztof},
+           giveni={K\bibinitperiod}}}%
+        {{hash=86ea0da63e96e8db298ae4064040389a}{%
+           family={Bubak},
+           familyi={B\bibinitperiod},
+           given={Grzegorz},
+           giveni={G\bibinitperiod}}}%
+        {{hash=30a9f1e8a2f4644cc43f0f2e0edbb004}{%
+           family={Kalwarczyk},
+           familyi={K\bibinitperiod},
+           given={Tomasz},
+           giveni={T\bibinitperiod}}}%
+        {{hash=4fe4b4b3f22e0d2b282a080d6a372240}{%
+           family={Holyst},
+           familyi={H\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Chemical Society ({ACS})}%
+      }
+      \strng{namehash}{a49655f7455849f8db1614e6ccc65ea2}
+      \strng{fullhash}{07fccc7d7ff258761a22ee29119af7ed}
+      \strng{bibnamehash}{a49655f7455849f8db1614e6ccc65ea2}
+      \strng{authorbibnamehash}{a49655f7455849f8db1614e6ccc65ea2}
+      \strng{authornamehash}{a49655f7455849f8db1614e6ccc65ea2}
+      \strng{authorfullhash}{07fccc7d7ff258761a22ee29119af7ed}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Physical Chemistry B}
+      \field{month}{2}
+      \field{number}{10}
+      \field{title}{Analysis of Brightness of a Single Fluorophore for Quantitative Characterization of Biochemical Reactions}
+      \field{volume}{124}
+      \field{year}{2020}
+      \field{pages}{1941\bibrangedash 1948}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1021/acs.jpcb.0c00770
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

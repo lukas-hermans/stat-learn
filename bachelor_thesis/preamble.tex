@@ -1,0 +1,67 @@
+\documentclass[twoside]{scrreprt}
+\raggedbottom
+
+\usepackage [T1] {fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} % Inclusion of figures
+\graphicspath{{C:/Users/Lukas/Desktop/Bachelor's Thesis/Thesis/images/}}
+\usepackage{multirow}
+\usepackage{subcaption}
+\usepackage[USenglish]{babel}
+\usepackage{fourier} % Font type
+\usepackage{csquotes} % Quotations
+%\renewcommand*\familydefault{\sfdefault} % no serifs
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage[thinc]{esdiff}
+
+\usepackage{enumitem}
+
+\usepackage[singlespacing]{setspace} % Spacing between words and after dot
+\setlength{\parindent}{0pt} % No indent for new paragraph
+\frenchspacing % Only one space after period
+
+\usepackage{fancyhdr} % Package for customization of header and fooder
+\pagestyle{fancy}
+\fancyheadoffset{0 cm} 
+\renewcommand{\chaptermark}[1]{\markboth{\thechapter~#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection~#1}}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{0cm}}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[LO]{\rightmark}
+\fancyhead[RE]{\leftmark}
+
+\renewcommand{\autodot}{} % Disables dot after numering of chapters
+
+\usepackage[toc, acronym, nomain, nonumberlist, nopostdot]{glossaries} % Package for acronym list
+\makeglossaries
+
+\usepackage[backend=biber, sorting=none, style=numeric, firstinits=true, doi=false, date=year]{biblatex} % Package for bibliography
+% If you want to break on URL numbers
+\setcounter{biburlnumpenalty}{9000}
+% If you want to break on URL lower case letters
+\setcounter{biburllcpenalty}{9000}
+% If you want to break on URL UPPER CASE letters
+\setcounter{biburlucpenalty}{9000}
+\usepackage{titlecaps}
+\Addlcwords{is of on in a and to into due}
+\DeclareFieldFormat{titlecase}{\titlecap{#1}}
+\addbibresource{Bibliography.bib}
+
+\usepackage{lipsum} % Package for dummy text
+
+\usepackage[ngerman]{datetime} % Package for date formats
+\newdateformat{monthyeardate}{\monthname[\THEMONTH] \THEYEAR}
+\newdateformat{completedategerman}{\THEDAY.\,\monthnamengerman[\THEMONTH] \THEYEAR}
+
+\usepackage{geometry} % Package for customization of margins
+
+\usepackage{hyperref} % Package for inclusion of hyperreferences
+
+\usepackage[per-mode=symbol, separate-uncertainty, detect-weight]{siunitx} % Package for scientific units
+\DeclareSIUnit{\volpercent}{vol\%}
+\usepackage[version=4]{mhchem} % Package for chemical expressions
+
+\usepackage{color} % Package for text in color

@@ -1,0 +1,100 @@
+\section{Samples}
+
+\subsection{Fluorescent Dyes}
+
+The following fluorescent dyes were used:
+\begin{itemize}
+	\item Alexa Fluor™ 488 NHS-Ester (Thermo Fisher Scientific Inc., Waltham, USA)
+	\item Cy5® NHS-Ester (Thermo Fisher Scientific Inc., Waltham, USA)
+	\item Atto 647N NHS-Ester (ATTO-TEC GmbH, Siegen, Germany)
+\end{itemize}
+For long storage times, the dyes were lyophilized and stored at \SI{-20}{\celsius}. For timely usage, they were dissolved in PBS buffer and stored at room temperature. 
+
+\subsection{DNA}
+
+The base sequence of the dye-labeled \glsfirst{ssDNA} was:\\
+5’-GGA CTA GTC TAG GCG AAC GTT TAA GGC GAT CTC TGT TTA CAA CTC CGA-3’.\\
+The following modifications were used:
+\begin{itemize}
+	\item dual-labeled: 5'-modified with Alexa 488, 3'-modified with Atto 647N
+	\item single-labeled: 3'-modified with Atto 647N
+\end{itemize}
+
+To synthesize the \glsfirst{dsDNA} samples, the dye-labeled \gls{ssDNA} was hybrid\-ized with the complementary unlabeled \gls{ssDNA}. All DNA strands were acquired from IBA Lifesciences (Göttingen, Germany). For long storage times, the DNA samples were dissolved in TE buffer and stored at \SI{-20}{\celsius}. For timely usage, they were dissolved in DNA buffer and stored at \SI{4}{\celsius}. 
+
+\subsection{Ribosomes}
+
+Ribosomes from E. coli unspecifically labeled with Cy5 were used. Detailed information on the preparation of the ribosome samples can be found in \cite{Hoefig2019b}. For timely usage, the ribosomes were dissolved in DNA buffer and stored at \SI{4}{\celsius}.
+
+\section{Buffers}
+
+The chemical compositions of the buffers were the following:\\
+
+\textbf{DNA buffer (pH of \num{7.5})}
+\begin{itemize}
+	\item \SI{20}{\milli\mole\per\liter} tris(hydroxymethyl)aminomethane (TRIS, \ce{C_4H_11NO_3})
+	\item \SI{100}{\milli\mole\per\liter} sodium chloride (\ce{NaCl})
+	\item \SI{10}{\milli\mole\per\liter} magnesium chloride (\ce{MgCl_2})\\
+\end{itemize}
+\clearpage
+\textbf{PBS buffer (pH of \num{7.2})}
+\begin{itemize}
+	\item \SI{14}{\milli\mole\per\liter} monopotassium phosphate (\ce{KH_2PO_4})
+	\item \SI{36}{\milli\mole\per\liter} dipotassium phosphate (\ce{K_2HPO_4})
+	\item \SI{150}{\milli\mole\per\liter} sodium chloride (\ce{NaCl})
+\end{itemize}
+\textbf{TE buffer (pH of \num{7.5})}
+\begin{itemize}
+	\item \SI{10}{\milli\mole\per\liter} tris(hydroxymethyl)aminomethane (TRIS, \ce{C_4H_11NO_3})
+	\item \SI{1}{\milli\mole\per\liter} ethylenediaminetetraacetic acid (EDTA, \ce{C_10H_16N_2O_8})
+\end{itemize}
+
+Prior to use, the fluorescent background of the buffers was measured. If lower concentrations of the samples were needed, they were diluted with DNA buffer. For measurements with free dyes and DNA samples, \SI{5}{\volpercent} of Tween 20 (Sigma-Aldrich, St. Louis, USA) was added to increase the solubility. 
+
+\section{Microscope Slides}
+
+Microscope slides of size \SI{22 x 22}{\milli\metre} with a thickness of \SI{170 +- 5}{\micro\metre} (\enquote{No. 1.5H}, Paul Marienfeld GmbH \& Co. KG, Lauda-Königshofen, Germany) were used. For experiments with DNA and ribosomes, the microscope slides were prepared additionally to prevent the sticking of the samples to the surface of the microscope slide. The preparation procedure of the microscope slides for those samples consisted of the following steps:
+
+\begin{enumerate}
+	\item Rinse for a few seconds with isopropanol, then acetone, and finally distilled water.
+	\item Dry with nitrogen.
+	\item Perform plasma cleaning (\enquote{Zepto}, Diener electronic GmbH + Co. KG, Ebhausen, Germany) for at least 20 minutes.
+\end{enumerate}
+
+To prevent the evaporation of the sample during a measurement, the microscope slides were sealed with a paraffin foil.
+
+\section{Confocal Fluorescence Microscope}
+
+For all experiments, the confocal fluorescence microscope \enquote{MicroTime 200} (PicoQuant GmbH, Berlin, Germany) was used. The following list gives an overview of its main parts:\\
+
+\textbf{objective}
+\begin{itemize}
+	\item \enquote{UPLSAPO60XW} (Olympus Deutschland GmbH, Hamburg, Germany), magnification: \num{60}x, numerical aperture: \num{1.2}, water immersion, correction collar set to \num{0.17}
+\end{itemize}
+\newpage
+\textbf{lasers}
+\begin{itemize}
+	\item \SI{481}{\nano\metre}: \enquote{LDH-D-C-485} (PicoQuant GmbH, Berlin, Germany) 
+	\item \SI{633}{\nano\metre}: \enquote{LDH-D-C-640} (PicoQuant GmbH, Berlin, Germany) 
+\end{itemize}
+\textbf{detectors}
+\begin{itemize}
+	\item channel 1: \enquote{$\tau$-SPAD} (PicoQuant GmbH, Berlin, Germany)
+	\item channel 2: \enquote{COUNT-T100} (Laser Components GmbH, Olching, Germany)
+\end{itemize}
+\textbf{emission bandpass filters}
+\begin{itemize}
+	\item blue emission filter: \enquote{FF01-530/55-25} (Semrock Inc., Rochester, USA)
+	\item red emission filter: \enquote{ET685/80m} (Chroma Technology Corp., Rockingham, USA)
+\end{itemize}
+
+\section{Software}
+
+The following list gives an overview of the software that was used for this thesis. For every software, the main purpose, the name, and the used version is given:
+\begin{itemize}
+	\item data acquisition with confocal microscope, and \gls{FCS} analysis: \enquote{SymPhoTime 64}, version~2.4 (PicoQuant GmbH, Berlin, Germany)
+	\item \gls{BTCCD} analysis: \enquote{BTCCD}, written by Henning Höfig (RWTH Aachen, Germany) in \enquote{MATLAB}, version R2015b \parencite{Hoefig2019}
+	\item self-written code for data analysis: \enquote{MATLAB}, version R2015b (The MathWorks Inc., Natick, USA)
+	\item self-written code for data analysis, and visualization: \enquote{Python}, version 3.7.7 (Python Software Foundation, Wilmington, USA)
+	\item Python distribution: \enquote{Anaconda Software Distribution}, version 2020.02 \cite{Anaconda}
+\end{itemize}

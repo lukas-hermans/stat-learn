@@ -1,0 +1,31 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {USenglish}{}
+\babel@toc {ngerman}{}
+\babel@toc {USenglish}{}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Burst threshold, background, and starting parameters for measurement of dual-labeled \gls {dsDNA}}}{22}{table.caption.25}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Parameters of linear fit of dwell time}}{24}{table.caption.27}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Parameters of biexponential fit of dwell time}}{25}{table.caption.29}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Parameters of exponential fit of molecule number}}{26}{table.caption.31}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Parameters of biexponential fit of molecule number}}{28}{table.caption.33}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Parameters of exponential fit of molecular brightness}}{29}{table.caption.35}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces Parameters of biexponential fit of molecular brightness}}{30}{table.caption.37}%
+\contentsline {table}{\numberline {4.8}{\ignorespaces Ranges of two underlying processes}}{31}{table.caption.38}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Burst threshold, background, and starting parameters for measurement of dual-labeled \gls {dsDNA}, conducted by Olessya Yukhnovets (RWTH Aachen, Germany)}}{32}{table.caption.39}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Measurement time, background, and starting parameters for mixture of red-labeled \gls {dsDNA} and free blue dye}}{36}{table.caption.42}%
+\contentsline {table}{\numberline {6.2}{\ignorespaces Measurement time, burst thresholds, background, and starting parameters for mixture of red-labeled ribosomes and free blue dye}}{36}{table.caption.43}%
+\contentsline {table}{\numberline {6.3}{\ignorespaces Measurement time, burst thresholds, background, and starting parameters for measurements of mixture of red-labeled \gls {dsDNA} and dual-labeled \gls {dsDNA}}}{44}{table.caption.52}%
+\contentsline {table}{\numberline {6.4}{\ignorespaces Corrected coincidence fraction of red channel at optimal brightness threshold for a mixture of red-labeled \gls {dsDNA} and dual-labeled \gls {dsDNA}}}{45}{table.caption.53}%
+\contentsline {table}{\numberline {6.5}{\ignorespaces Corrected coincidence fraction of red channel at $n_{br} = \num {6.40}$ for a mixture of red-labeled \gls {dsDNA} and dual-labeled \gls {dsDNA}}}{45}{table.caption.54}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {D.1}{\ignorespaces Corrected coincidence fraction of blue channel at optimal brightness threshold for a mixture of red-labeled \gls {dsDNA} and dual-labeled \gls {dsDNA}}}{72}{table.caption.75}%
+\contentsline {table}{\numberline {D.2}{\ignorespaces Corrected coincidence fraction of blue channel at $n_{br} = \num {3.53}$ for a mixture of red-labeled \gls {dsDNA} and dual-labeled \gls {dsDNA}}}{72}{table.caption.76}%
