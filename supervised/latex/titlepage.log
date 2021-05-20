@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=latex 2021.5.10)  13 MAY 2021 21:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.5.10)  15 MAY 2021 21:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -19,6 +19,15 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+! Undefined control sequence.
+l.5 	\Large
+           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 
 ! LaTeX Error: Missing \begin{document}.
 
@@ -26,21 +35,75 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2 	M
-      EINE ARBEI
+l.6 	S
+      upervised Learning
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-Missing character: There is no M in font nullfont!
-Missing character: There is no E in font nullfont!
-Missing character: There is no I in font nullfont!
-Missing character: There is no N in font nullfont!
-Missing character: There is no E in font nullfont!
-Missing character: There is no A in font nullfont!
-Missing character: There is no R in font nullfont!
-Missing character: There is no B in font nullfont!
-Missing character: There is no E in font nullfont!
-Missing character: There is no I in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+! Undefined control sequence.
+l.10 	\LARGE
+            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 	\textbf{Bitcoin Price Prediction}
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (36.29147pt too wide) in paragraph at lines 11--12
+ []\OT1/cmr/bx/n/10 Bitcoin 
+ []
+
+
+Overfull \hbox (26.1735pt too wide) in paragraph at lines 11--12
+ \OT1/cmr/bx/n/10 Price 
+ []
+
+
+Overfull \hbox (21.7013pt too wide) in paragraph at lines 11--12
+ \OT1/cmr/bx/n/10 Pre- 
+ []
+
+
+Overfull \hbox (18.52768pt too wide) in paragraph at lines 11--12
+ \OT1/cmr/bx/n/10 dic- 
+ []
+
+
+Overfull \hbox (19.80545pt too wide) in paragraph at lines 11--12
+ \OT1/cmr/bx/n/10 tion 
+ []
+
 
 ! LaTeX Error: \begin{document} ended by \end{titlepage}.
 
@@ -48,8 +111,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3 \end{titlepage}
-                   
+l.16 \end{titlepage}
+                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -62,11 +125,11 @@ or  <return>  to continue without it.
 
  
 Here is how much of TeX's memory you used:
- 17 strings out of 482812
- 409 string characters out of 5955766
- 237627 words of memory out of 5000000
- 15470 multiletter control sequences out of 15000+600000
- 535088 words of font info for 29 fonts, out of 8000000 for 9000
+ 20 strings out of 482811
+ 434 string characters out of 5955740
+ 237630 words of memory out of 5000000
+ 15472 multiletter control sequences out of 15000+600000
+ 535396 words of font info for 30 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 12i,0n,15p,62b,19s stack positions out of 5000i,500n,10000p,200000b,80000s
-No pages of output.
+ 13i,1n,15p,66b,87s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!
