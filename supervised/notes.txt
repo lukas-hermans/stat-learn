@@ -1,1 +1,27 @@
-- kaggle bitcoin data all from BitStamp
+Overall question: How many days in the future can we predict the Bitcoin price development with an acceptable accuracy?
+
+Introduction: 
+- explanation of Bitcoin
+- so far classification showed reasonable accuracy of about 50 %
+- now: regression to predict price for next days
+- content structure
+
+Data Set & Predictors:
+- predictors: prices from Bitstamp (https://www.cryptodatadownload.com/data/bitstamp/), transaction number (https://www.blockchain.com/charts/n-transactions?timespan=all&format=json), non-classical: blocksize, difficulty, fees, miner revenue, hashrate
+- many other predictors possible (e.g., Twitter sentiment, Google searches, etc...)
+- standardization of data
+- bring data into correct form (some part of history + some part of future)
+- presentation of data
+- goal: predict bitcoin price based on certain part of history
+
+Prediction Algorithms:
+- GAM
+- Neural Network
+
+Results:
+
+Discussion:
+
+
+Conclusion: 
+
