@@ -1,0 +1,12 @@
+For the present work, the multiclass kernel perceptron algorithm is implemented in the programming language Python (version 3.8.6).
+On top of vanilla Python, the following software is used:
+\begin{itemize}
+	\item pip (version 21.1.2): managing of Python modules 
+	\item matplotlib (version 3.4.2) \& seaborn (version 0.11.1): modules for visualization \& plots
+	\item pandas (version 1.2.4): module for loading data
+	\item numpy (version 1.20.3): module for array computing (such as dot products)
+\end{itemize}
+All of the Python code used in this paper can be found in the following GitHub repository: \url{https://github.com/lukher98/digit-classification}. To ensure the reproducability of the numerical results, seeds for the random number generator of the numpy module are set whenever random numbers enter the computation. In contrast to Algorithm~\ref{alg:binary_kernel_perceptron}, the predictors of each iteration of the binary kernel perceptron algorithm are not collected but the average and minimizing predictors are computed on the fly, in order to obtain higher efficiency and less memory usage.
+In addition to the Python code, the repository contains the whole MNIST dataset (using Git Large File Storage), as well as the \LaTeX\ code of this paper.
+
+The Python code is executed on a Linux machine, but it should also work on a Mac machine. For Windows, the user might have to change some paths inside the code.

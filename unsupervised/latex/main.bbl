@@ -16,32 +16,231 @@
   {}
 \endgroup
 
-\datalist[entry]{nty/global//global/global}
-  \entry{BitcoinData2021}{online}{}
+\datalist[entry]{none/global//global/global}
+  \entry{autonomeous2020}{article}{}
     \name{author}{1}{}{%
-      {{hash=oKZU}{%
+      {{hash=SAP}{%
+         family={Sligar},
+         familyi={S\bibinitperiod},
+         given={Arien\bibnamedelima P.},
+         giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SAP1}
+    \strng{fullhash}{SAP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/ACCESS.2020.2977922
+    \endverb
+    \field{pages}{51470\bibrangedash 51476}
+    \field{title}{Machine Learning-Based Radar Perception for Autonomous
+  Vehicles Using Full Physics Simulation}
+    \field{volume}{8}
+    \field{journaltitle}{IEEE Access}
+    \field{year}{2020}
+  \endentry
+
+  \entry{emotion2020}{article}{}
+    \name{author}{1}{}{%
+      {{hash=ASDGAK}{%
+         family={Anvita\bibnamedelima Saxena},
+         familyi={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+         suffix={Ashish\bibnamedelima Khanna},
+         suffixi={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+         given={Deepak\bibnamedelima Gupta},
+         giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ASAKDG1}
+    \strng{fullhash}{ASAKDG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1038/s41746-020-00376-2
+    \endverb
+    \field{pages}{53–79}
+    \field{title}{Emotion Recognition and Detection Methods: A Comprehensive
+  Survey}
+    \field{volume}{2}
+    \field{journaltitle}{Journal of Artificial Intelligence and Systems}
+    \field{year}{2020}
+  \endentry
+
+  \entry{medicine2021}{article}{}
+    \name{author}{3}{}{%
+      {{hash=EA}{%
+         family={Esteva},
+         familyi={E\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CK}{%
+         family={Chou},
+         familyi={C\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=YS}{%
+         family={Yeung},
+         familyi={Y\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{EACKYS1}
+    \strng{fullhash}{EACKYS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1038/s41746-020-00376-2
+    \endverb
+    \field{number}{5}
+    \field{title}{Deep learning-enabled medical computer vision}
+    \field{volume}{4}
+    \field{journaltitle}{npj Digit. Med.}
+    \field{year}{2021}
+  \endentry
+
+  \entry{MNIST}{online}{}
+    \name{author}{3}{}{%
+      {{hash=LY}{%
+         family={LeCun},
+         familyi={L\bibinitperiod},
+         given={Yann},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=CC}{%
+         family={Cortes},
+         familyi={C\bibinitperiod},
+         given={Corinna},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=BCJ}{%
+         family={Burges},
+         familyi={B\bibinitperiod},
+         given={Christopher\bibnamedelima J.C.},
+         giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LYCCBCJ1}
+    \strng{fullhash}{LYCCBCJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{The MNIST database of handwritten digits}}
+    \verb{url}
+    \verb http://yann.lecun.com/exdb/mnist/
+    \endverb
+    \field{year}{2021}
+    \field{urlday}{02}
+    \field{urlmonth}{06}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{KaggleData}{online}{}
+    \name{author}{1}{}{%
+      {{hash=oKDU}{%
          prefix={on},
          prefixi={o\bibinitperiod},
          family={Kaggle},
          familyi={K\bibinitperiod},
-         given={Zielak\bibnamedelima (User)},
-         giveni={Z\bibinitperiod\bibinitdelim U\bibinitperiod},
+         given={{Dariel Dato-on}\bibnamedelima (User)},
+         giveni={D\bibinitperiod\bibinitdelim U\bibinitperiod},
       }}%
     }
-    \strng{namehash}{KZUo1}
-    \strng{fullhash}{KZUo1}
+    \strng{namehash}{KDUo1}
+    \strng{fullhash}{KDUo1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{sortinit}{K}
-    \field{sortinithash}{K}
-    \field{title}{{Bitcoin Historical Data}}
+    \field{title}{{MNIST in CSV}}
     \verb{url}
-    \verb https://www.kaggle.com/mczielinski/bitcoin-historical-data
+    \verb https://www.kaggle.com/oddrationale/mnist-in-csv
     \endverb
     \field{year}{2021}
-    \field{urlday}{20}
-    \field{urlmonth}{05}
-    \field{urlyear}{2020}
+    \field{urlday}{02}
+    \field{urlmonth}{06}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{multiclass2005}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=XJ}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Jianhua},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ZX}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Xuegong},
+         giveni={X\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{XJZX1}
+    \strng{fullhash}{XJZX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2005 International Conference on Neural Networks and
+  Brain}
+    \verb{doi}
+    \verb 10.1109/ICNNB.2005.1614728
+    \endverb
+    \field{pages}{717\bibrangedash 721}
+    \field{title}{A multiclass kernel perceptron algorithm}
+    \field{volume}{2}
+    \field{year}{2005}
+  \endentry
+
+  \entry{kernel1964}{article}{}
+    \name{author}{3}{}{%
+      {{hash=AMA}{%
+         family={Aizerman},
+         familyi={A\bibinitperiod},
+         given={M.\bibnamedelima A.},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=BEA}{%
+         family={Braverman},
+         familyi={B\bibinitperiod},
+         given={E.\bibnamedelima A.},
+         giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=RL}{%
+         family={Rozonoer},
+         familyi={R\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AMABEARL1}
+    \strng{fullhash}{AMABEARL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{6}
+    \field{pages}{917\bibrangedash 936}
+    \field{title}{Theoretical foundations of the potential function method in
+  pattern recognition learning}
+    \field{volume}{25}
+    \field{journaltitle}{Avtomat. i Telemekh.}
+    \field{year}{1967}
+  \endentry
+
+  \entry{perceptron1957}{article}{}
+    \name{author}{1}{}{%
+      {{hash=R}{%
+         family={Rosenblatt},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{R1}
+    \strng{fullhash}{R1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{The Perceptron: A Perceiving and Recognizing Automaton}
+    \field{volume}{85-460-1}
+    \field{journaltitle}{Conrell Aeronautical Laboratory}
+    \field{year}{1957}
   \endentry
 \enddatalist
 \endinput

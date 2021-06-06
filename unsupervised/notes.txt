@@ -1,7 +1,0 @@
-Overall question: Tourist booking recommendations
-
-Introduction: 
-
-Data Set:
-- cars per capita, 
-
