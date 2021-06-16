@@ -16,32 +16,241 @@
   {}
 \endgroup
 
-\datalist[entry]{nty/global//global/global}
-  \entry{BitcoinData2021}{online}{}
+\datalist[entry]{none/global//global/global}
+  \entry{Bitcoin2009}{article}{}
     \name{author}{1}{}{%
-      {{hash=oKZU}{%
-         prefix={on},
-         prefixi={o\bibinitperiod},
-         family={Kaggle},
-         familyi={K\bibinitperiod},
-         given={Zielak\bibnamedelima (User)},
-         giveni={Z\bibinitperiod\bibinitdelim U\bibinitperiod},
+      {{hash=NS}{%
+         family={Nakamoto},
+         familyi={N\bibinitperiod},
+         given={Satoshi},
+         giveni={S\bibinitperiod},
       }}%
     }
-    \strng{namehash}{KZUo1}
-    \strng{fullhash}{KZUo1}
+    \strng{namehash}{NS1}
+    \strng{fullhash}{NS1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{sortinit}{K}
-    \field{sortinithash}{K}
-    \field{title}{{Bitcoin Historical Data}}
+    \field{title}{Bitcoin: A Peer-to-Peer Electronic Cash System}
+    \field{journaltitle}{Cryptography Mailing list at https://metzdowd.com}
+    \field{month}{03}
+    \field{year}{2009}
+  \endentry
+
+  \entry{MarketCapCompany2021}{online}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={Statista},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{The 100 largest companies in the world by market
+  capitalization in 2021}}
     \verb{url}
-    \verb https://www.kaggle.com/mczielinski/bitcoin-historical-data
+    \verb https://www.statista.com/statistics/263264/top-companies-in-the-world
+    \verb -by-market-capitalization/
     \endverb
     \field{year}{2021}
-    \field{urlday}{20}
-    \field{urlmonth}{05}
-    \field{urlyear}{2020}
+    \field{urlday}{14}
+    \field{urlmonth}{06}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{MarketCapBitcoin2021}{online}{}
+    \name{author}{1}{}{%
+      {{hash=C}{%
+         family={CoinMarketCap},
+         familyi={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{C2}
+    \strng{fullhash}{C2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Today's Cryptocurrency Prices by Market Cap}}
+    \verb{url}
+    \verb https://coinmarketcap.com/
+    \endverb
+    \field{year}{2021}
+    \field{urlday}{14}
+    \field{urlmonth}{06}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{Data}{online}{}
+    \name{author}{1}{}{%
+      {{hash=B}{%
+         family={Blockchain.com},
+         familyi={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{B1}
+    \strng{fullhash}{B1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Blockchain Charts \& Statistics API}}
+    \verb{url}
+    \verb https://www.blockchain.com/api/charts_api
+    \endverb
+    \field{year}{2021}
+    \field{urlday}{16}
+    \field{urlmonth}{06}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{SocialMedia2015}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=MM}{%
+         family={Matta},
+         familyi={M\bibinitperiod},
+         given={Martina},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LMI}{%
+         family={Lunesu},
+         familyi={L\bibinitperiod},
+         given={Maria\bibnamedelima Ilaria},
+         giveni={M\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Marchesi},
+         familyi={M\bibinitperiod},
+         given={Michele},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MMLMIMM1}
+    \strng{fullhash}{MMLMIMM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Bitcoin Spread Prediction Using Social And Web Search Media}
+    \field{month}{06}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Twitter2019}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=CG}{%
+         family={Cheuque},
+         familyi={C\bibinitperiod},
+         given={Germán},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=RJ}{%
+         family={Reutter},
+         familyi={R\bibinitperiod},
+         given={Juan},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CGRJ1}
+    \strng{fullhash}{CGRJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1145/3308560.3316454
+    \endverb
+    \field{isbn}{978-1-4503-6675-5}
+    \field{pages}{755\bibrangedash 762}
+    \field{title}{Bitcoin Price Prediction Through Opinion Mining}
+    \field{month}{05}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Classification2015}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=GA}{%
+         family={Greaves},
+         familyi={G\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=AB}{%
+         family={Au},
+         familyi={A\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GAAB1}
+    \strng{fullhash}{GAAB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Using the Bitcoin Transaction Graph to Predict the Price of
+  Bitcoin}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Musk2021}{online}{}
+    \name{author}{1}{}{%
+      {{hash=ME}{%
+         family={Musk},
+         familyi={M\bibinitperiod},
+         given={Elon},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ME1}
+    \strng{fullhash}{ME1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Tweet}}
+    \verb{url}
+    \verb https://twitter.com/elonmusk/status/1392602041025843203
+    \endverb
+    \field{year}{2021}
+    \field{urlday}{15}
+    \field{urlmonth}{06}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{China2021}{online}{}
+    \name{author}{1}{}{%
+      {{hash=C}{%
+         family={CNBC},
+         familyi={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{C1}
+    \strng{fullhash}{C1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Bitcoin price falls after China calls for crackdown on
+  bitcoin mining and trading behavior}}
+    \verb{url}
+    \verb https://www.cnbc.com/2021/05/21/bitcoin-falls-after-china-calls-for-c
+    \verb rackdown-on-bitcoin-mining-and-trading-behavior.html
+    \endverb
+    \field{year}{2021}
+    \field{urlday}{15}
+    \field{urlmonth}{06}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{Binance2021}{online}{}
+    \name{author}{1}{}{%
+      {{hash=B}{%
+         family={Bloomberg},
+         familyi={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{B2}
+    \strng{fullhash}{B2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Binance Faces Probe by U.S. Money-Laundering and Tax Sleuths
+  }}
+    \verb{url}
+    \verb https://www.bloomberg.com/news/articles/2021-05-13/binance-probed-by-
+    \verb u-s-as-money-laundering-tax-sleuths-bore-in
+    \endverb
+    \field{year}{2021}
+    \field{urlday}{15}
+    \field{urlmonth}{06}
+    \field{urlyear}{2021}
   \endentry
 \enddatalist
 \endinput

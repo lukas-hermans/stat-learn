@@ -4,26 +4,36 @@
 \usepackage [T1] {fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[USenglish]{babel}
+\usepackage{csquotes}
+
+\usepackage{array, multirow}
 
 \usepackage{graphicx} % Inclusion of figures
 \graphicspath{{./images/}}
+\usepackage{subcaption}
 
 \usepackage{lmodern} % Font type
 
 \usepackage{amsfonts}
 \usepackage{amsmath}
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\argmin}{argmin}
+\usepackage{bbm}
+\usepackage[ruled,vlined]{algorithm2e}
+
+\usepackage{siunitx}
 
 \usepackage{hyperref}
 \usepackage{lipsum}
 
 
 \usepackage[singlespacing]{setspace} % Spacing between words and after dot
-%\setlength\parindent{0pt} % No indent for new paragraph
+\setlength\parindent{0pt} % No indent for new paragraph
 \frenchspacing % Only one space after period
 
 \usepackage{fancyhdr}
 
 \usepackage{csquotes}
-\usepackage[backend=bibtex]{biblatex}
+\usepackage[backend=bibtex, sorting=none]{biblatex}
 \addbibresource{bibliography.bib}
 %\Addlcwords{is of on in a and to into due}
