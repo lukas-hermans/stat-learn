@@ -4,7 +4,7 @@ start_date = "2011-09-01"
 raw_data_path = "../data/raw/" 
 save_data_path = "../data/"
 
-#### create Bitcoin price development dataset from Blockchain.com API ----
+#### create dataset from Blockchain.com API ----
 
 # typical financial asset data
 market_price = read.csv(paste(raw_data_path, "market-price.csv", sep = ""), header = FALSE)
@@ -43,16 +43,16 @@ difficulty = difficulty[difficulty$date >= start_date,]
 hash_rate = hash_rate[hash_rate$date >= start_date,]
 miners_revenue = miners_revenue[miners_revenue$date >= start_date,]
 
-# combine everything into one data.frame
+# combine everything into one data.frame (and convert to reasonable units)
 data = data.frame(date = market_price$date,
-                  market_price = market_price$market_price,
-                  market_cap = market_cap$market_cap,
-                  n_transactions = n_transactions$n_transactions,
-                  estimated_transaction_volume = estimated_transaction_volume$estimated_transaction_volume,
+                  market_price = market_price$market_price * 10^-4,
+                  market_cap = market_cap$market_cap * 10^-11,
+                  n_transactions = n_transactions$n_transactions * 10^-5,
+                  estimated_transaction_volume = estimated_transaction_volume$estimated_transaction_volume * 10^-6,
                   avg_block_size = avg_block_size$avg_block_size,
-                  difficulty = difficulty$difficulty,
-                  hash_rate = hash_rate$hash_rate,
-                  miners_revenue = miners_revenue$miners_revenue)
+                  difficulty = difficulty$difficulty * 10^-12,
+                  hash_rate = hash_rate$hash_rate * 10^-6,
+                  miners_revenue = miners_revenue$miners_revenue * 10^-7)
 
 # write data to csv-file
 write.csv(x = data, file = paste(save_data_path, "data.csv", sep = ""), row.names = FALSE)
