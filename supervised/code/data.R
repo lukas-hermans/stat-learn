@@ -1,7 +1,7 @@
 #### user input ----
 
 start_date = "2011-09-01"
-m_list = c(5, 10, 15, 20)
+m_list = 100
 
 raw_data_path = "../data/raw/" 
 save_data_path = "../data/"
@@ -92,7 +92,7 @@ gen_moving_window <- function(data, m) {
   col_names = names(data)
   new_col_names = c()
   for (col_name in col_names) {
-    for (i in seq(-m + 1, -1)) {
+    for (i in seq(-m + 2, 0)) {
       new_col_names = c(new_col_names, paste(col_name, i, sep = ""))
     }
   }

@@ -1,8 +1,10 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.2}{Dataset \046 Definitions}{}% 2
-\BOOKMARK [1][-]{section.3}{Theory}{}% 3
-\BOOKMARK [1][-]{section.4}{Implementation \046 Software}{}% 4
-\BOOKMARK [1][-]{section.5}{Results}{}% 5
-\BOOKMARK [1][-]{section.6}{Discussion}{}% 6
-\BOOKMARK [1][-]{section.7}{Conclusion \046 Outlook}{}% 7
-\BOOKMARK [1][-]{section.7}{References}{}% 8
+\BOOKMARK [1][-]{section.2}{Dataset}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Bitcoin Time Series Data}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Supervised Learning Approach}{section.2}% 4
+\BOOKMARK [1][-]{section.3}{Theory}{}% 5
+\BOOKMARK [1][-]{section.4}{Implementation \046 Software}{}% 6
+\BOOKMARK [1][-]{section.5}{Results}{}% 7
+\BOOKMARK [1][-]{section.6}{Discussion}{}% 8
+\BOOKMARK [1][-]{section.7}{Conclusion \046 Outlook}{}% 9
+\BOOKMARK [1][-]{section.7}{References}{}% 10

@@ -8,6 +8,8 @@ library(corrplot)
 data_path = "../data/data.csv"
 figure_path = "figures/"
 
+lag_max = 300
+
 #### load Bitcoin dataset ----
 
 data = read.csv(data_path)
@@ -62,3 +64,7 @@ corrplot(cor, type="upper",
          tl.col="black", tl.srt=45,
          diag=FALSE)
 
+# plot autocorrelation of Bitcoin market price -
+autocor = acf(data$market_price, plot = TRUE, lag.max = lag_max)
+ggplot(autocor, aes(autocor$lag, autocor$acf)) + geom_line() +
+  xlab("lag [days]") + ylab("autocorrelation")
