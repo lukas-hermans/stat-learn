@@ -65,6 +65,6 @@ corrplot(cor, type="upper",
          diag=FALSE)
 
 # plot autocorrelation of Bitcoin market price -
-autocor = acf(data$market_price, plot = TRUE, lag.max = lag_max)
-ggplot(autocor, aes(autocor$lag, autocor$acf)) + geom_line() +
+autocor = acf(data$market_price, plot = FALSE, lag.max = lag_max)
+ggplot(mapping = aes(autocor$lag, autocor$acf)) + geom_line() +
   xlab("lag [days]") + ylab("autocorrelation")

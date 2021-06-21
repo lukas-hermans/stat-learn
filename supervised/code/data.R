@@ -66,6 +66,7 @@ write.csv(x = data, file = paste(save_data_path, "data.csv", sep = ""), row.name
 data$miners_revenue = NULL
 data$market_cap = NULL
 data$estimated_transaction_volume = NULL
+data$difficulty = NULL
 
 # normalize time series with min-max-method
 normalize <- function(x) {
