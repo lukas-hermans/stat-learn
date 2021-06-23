@@ -1,6 +1,5 @@
-set.seed(1)
-
 data_split = function(moving_window_path, frac_train){
+  set.seed(1)
   data = read.csv(moving_window_path)
   data$label = as.factor(data$label)
   
