@@ -1,61 +1,124 @@
 import pandas as pd
 import tensorflow as tf
 import numpy as np
+import rpy2.robjects as robjects
+from rpy2.robjects import pandas2ri
 from tensorflow import keras
 from tensorflow.keras import layers
+import sklearn.metrics
 
+# set random number generator seeds ---
 np.random.seed(1)
 tf.random.set_seed(1)
 
 # user input ----
 
-moving_window_path = "../data/moving_window/"
-m_list = [5]
+moving_window_path = "../data/m=100.csv"
+m_list = np.arange(2, 101, 1)
+
+n_folds = 10
 train_frac = 0.8
 
+batch_size = 32
+n_epochs = 100
 
+# load & prepare data ----
+
+pandas2ri.activate()
+
+r = robjects.r
+r['source']('r_from_python.R')
+
+data_split_r = robjects.globalenv['data_split']
+
+data_r = data_split_r(moving_window_path, train_frac)
+data = pandas2ri.rpy2py(data_r)
+
+data_train = np.array(pd.DataFrame(data[0])).astype(np.float32)
+features_train = data_train[:, :-1]
+label_train = data_train[:, -1]
+
+data_test = np.array(pd.DataFrame(data[1])).astype(np.float32)
+features_test = data_test[:, :-1]
+label_test = data_test[:, -1]
+
+# same as in r
+def data_up_to_m(data, m, m_file):
+    drop_num = m_file - m
+
+    # collect indices that should be dropped
+    # i.e. drop past values
+    drop_cols = []
+    for i in range(drop_num):
+        drop_cols.append(i)
+        drop_cols.append(i + m_file - 1)
+        drop_cols.append(i + 2*m_file - 2)
+        drop_cols.append(i + 3*m_file - 3)
+    
+    return np.delete(data, drop_cols, axis = 1)
+
+# neural network ----
+
+# get training and validation indexes w.r.t. training data
+ind_train = np.arange(0, int(len(data_train) * 0.75))  
+ind_val = np.arange(int(len(data_train) * 0.75), len(data_train))  
+
+acc = []
+acc_train = []
+n_epochs_list = []
+
+# loop over all window sizes m in m_list
 for m in m_list:
-
-    # load data set for window size m
-    data = np.array(pd.read_csv(moving_window_path + "m=" + str(m) + ".csv"))
-    # np.random.shuffle(data)
-
-    # split data set into training, validation, and test set
-    n_train = int(len(data) * train_frac)
-    n_val = int(len(data) * (1 - train_frac) / 2)
-    n_test = len(data) - n_train - n_val
-    data_train = data[:n_train, :]
-    data_val = data[n_train:n_train+n_val, :]
-    data_test = data[n_train+n_val:n_train+n_val+n_test, :]
-
-    # get features and labels (and apply one-hot encoding)
-    features_train = data_train[:, :np.shape(data_train)[1]-1]
-    label_train = tf.reshape(tf.one_hot(
-        data_train[:, -1], 2), shape=[len(data_train), 2])
-    features_val = data_val[:, :np.shape(data_val)[1]-1]
-    label_val = tf.reshape(tf.one_hot(
-        data_val[:, -1], 2), shape=[len(data_val), 2])
-    features_test = data_test[:, :np.shape(data_test)[1]-1]
-    label_test = tf.reshape(tf.one_hot(
-        data_test[:, -1], 2), shape=[len(data_test), 2])
+    
+    print(m)
+    
+    # get data for current m
+    data_train_m = data_up_to_m(data_train, m, max(m_list))
+    features_train_m = data_train_m[:, :-2]
+    label_train_m = data_train_m[:, -1]
+    data_test_m = data_up_to_m(data_test, m, max(m_list))
+    features_test_m = data_test_m[:, :-2]
+    label_test_m = data_test_m[:, -1]
+    
+    # one-hot encoding of training and validation labels
+    label_train_m_hot = tf.reshape(tf.one_hot(label_train_m[ind_train], 2), shape = [len(label_train_m[ind_train]), 2])
+    label_val_m_hot = tf.reshape(tf.one_hot(label_train_m[ind_val], 2), shape = [len(label_train_m[ind_val]), 2])
 
     # neural network structure
     model = keras.Sequential()
-    model.add(layers.InputLayer(input_shape=(np.shape(data)[1]-1)))
-    model.add(layers.Dense(128, activation="relu"))
-    model.add(layers.Dense(128, activation="relu"))
-    model.add(layers.Dense(64, activation="relu"))
+    model.add(layers.InputLayer(input_shape=np.shape(features_train_m)[1]))
+    model.add(layers.Dense(50, activation="relu"))
+    model.add(layers.Dropout(0.5))
+    model.add(layers.Dense(60, activation="relu"))
+    model.add(layers.Dropout(0.5))
+    model.add(layers.Dense(30, activation="relu"))
+    model.add(layers.Dropout(0.5))
     model.add(layers.Dense(2, activation="softmax"))
 
     # compile model
     model.compile(optimizer="adam", loss='categorical_crossentropy',
                   metrics=['accuracy'])
-
-    # fit model
-    history = model.fit(features_train,
-                        label_train,
-                        shuffle=True,
-                        epochs=100,
-                        batch_size=32,
-                        validation_data=(features_val, label_val),
-                        verbose=1)
+    
+    # loop over desired number of epochs
+    acc_epoch = []
+    for i in range(n_epochs):
+        # fit model
+        history = model.fit(features_train_m[ind_train, :],
+                            label_train_m_hot,
+                            shuffle=True,
+                            epochs=1,
+                            batch_size=batch_size,
+                            validation_data=(features_train_m[ind_val, :], label_val_m_hot),
+                            verbose=0)
+        
+        acc_epoch.append(max(history.history["val_accuracy"]))
+    
+    n_epochs_best = np.argmax(history.history["val_accuracy"]) + 1
+    acc.append(max(history.history["val_accuracy"]))
+    acc_train.append(history.history["accuracy"][n_epochs_best - 1])
+    n_epochs_list.append(n_epochs_best)
+    
+    
+# y_pred = model.predict(features_test_m)
+# confusion_matrix = sklearn.metrics.multilabel_confusion_matrix(label_test_m_hot, np.rint(y_pred))
+# print(confusion_matrix)

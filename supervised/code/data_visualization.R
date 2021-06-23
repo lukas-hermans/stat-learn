@@ -1,3 +1,5 @@
+# ---- data_visualization
+
 #### include packages ----
 library(ggplot2)
 library(gridExtra)
@@ -8,7 +10,7 @@ library(corrplot)
 data_path = "../data/data.csv"
 figure_path = "figures/"
 
-lag_max = 300
+lag_max = 300 # for autocorrelation plot
 
 #### load Bitcoin dataset ----
 
@@ -46,7 +48,7 @@ grid.arrange(plot_market_price,
              plot_miners_revenue,
              ncol=2)
 
-# plot correlation matrix
+# plot correlation matrix for all variables
 cor_data = data
 cor_data$date = NULL
 colnames(cor_data) = c("market price",
@@ -64,7 +66,18 @@ corrplot(cor, type="upper",
          tl.col="black", tl.srt=45,
          diag=FALSE)
 
-# plot autocorrelation of Bitcoin market price -
+# plot autocorrelation of Bitcoin market price
 autocor = acf(data$market_price, plot = FALSE, lag.max = lag_max)
 ggplot(mapping = aes(autocor$lag, autocor$acf)) + geom_line() +
   xlab("lag [days]") + ylab("autocorrelation")
+
+# exclude some features
+data$miners_revenue = NULL
+data$market_cap = NULL
+data$estimated_transaction_volume = NULL
+data$difficulty = NULL
+
+# plot all vs. all
+data$date = NULL
+ggpairs(data, columnLabels = c("market price [10⁴ USD]", "# transactions [10⁵]", 
+                               "avg. block size [MB]", "hash rate [EH/s]")) 

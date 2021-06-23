@@ -1,6 +1,5 @@
 \relax 
 \providecommand\hyper@newdestlabel[2]{}
-\providecommand\babel@aux[2]{}
 \@nameuse{bbl@beforestart}
 \providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
 \HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
@@ -35,9 +34,46 @@
 \citation{MarketCapBitcoin2021}
 \abx@aux@cite{MarketCapBitcoin2021}
 \abx@aux@segm{0}{0}{MarketCapBitcoin2021}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{2}{section.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Simplified illustration of the Bitcoin blockchain. The blocks contain all transactions made with the cryptocurrency Bitcoin. A new block $n+1$ is created by investing computing power to solve a mathematical task. The person or group that solves this task first is rewarded with new Bitcoins as well as with the transactions fees of the transactions in the new block. The new block $n+1$ is appended to the Bitcoin blockchain. This process is called Bitcoin mining as it implies the creation of new Bitcoins.\relax }}{2}{figure.caption.2}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:blockchain}{{1}{2}{Simplified illustration of the Bitcoin blockchain. The blocks contain all transactions made with the cryptocurrency Bitcoin. A new block $n+1$ is created by investing computing power to solve a mathematical task. The person or group that solves this task first is rewarded with new Bitcoins as well as with the transactions fees of the transactions in the new block. The new block $n+1$ is appended to the Bitcoin blockchain. This process is called Bitcoin mining as it implies the creation of new Bitcoins.\relax }{figure.caption.2}{}}
 \citation{Data}
 \abx@aux@cite{Data}
 \abx@aux@segm{0}{0}{Data}
+\citation{Data}
+\abx@aux@cite{Data}
+\abx@aux@segm{0}{0}{Data}
+\citation{Data}
+\abx@aux@cite{Data}
+\abx@aux@segm{0}{0}{Data}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Dataset}{3}{section.2}\protected@file@percent }
+\newlabel{sec:dataset}{{2}{3}{Dataset}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Bitcoin Time Series Data}{3}{subsection.2.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Bitcoin time series data taken from the Blockchain.com API \cite {Data}. The time series dataset contains information on the Bitcoin market price and the other displayed measures for the time period from \date {01 September 2011} to \date {15 June 2021}. This is a total of $3576$ days. The different measures are explained in the main text.\relax }}{4}{figure.caption.3}\protected@file@percent }
+\newlabel{fig:blockchain.api}{{2}{4}{Bitcoin time series data taken from the Blockchain.com API \cite {Data}. The time series dataset contains information on the Bitcoin market price and the other displayed measures for the time period from \date {01 September 2011} to \date {15 June 2021}. This is a total of $3576$ days. The different measures are explained in the main text.\relax }{figure.caption.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Correlation matrix of the time series from Fig.~\ref  {fig:blockchain.api}. The displayed values are Pearson's correlation coefficient. Due to their high correlation to the Bitcoin market price, the time series of the market cap, the difficulty, and the miner's revenue are not further considered. In addition, the transaction volume is dropped because it has only a weak correlation to the Bitcoin market price. An overview of the remaining measures can be found in Fig.~\ref  {fig:all_vs_all}.\relax }}{5}{figure.caption.4}\protected@file@percent }
+\newlabel{fig:correlation_matrix}{{3}{5}{Correlation matrix of the time series from Fig.~\ref {fig:blockchain.api}. The displayed values are Pearson's correlation coefficient. Due to their high correlation to the Bitcoin market price, the time series of the market cap, the difficulty, and the miner's revenue are not further considered. In addition, the transaction volume is dropped because it has only a weak correlation to the Bitcoin market price. An overview of the remaining measures can be found in Fig.~\ref {fig:all_vs_all}.\relax }{figure.caption.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Plot matrix of further considered measures that appear to be useful for the prediction of the future Bitcoin market price. The line plots on the diagonal are the densities of the respective measures. In addition, Pearson's correlation coefficient - the same from Fig.~\ref  {fig:correlation_matrix} - is shown. It is observed that the number of transactions, the average block size, and the hash rate reveals a significant correlation to the market price.\relax }}{6}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:all_vs_all}{{4}{6}{Plot matrix of further considered measures that appear to be useful for the prediction of the future Bitcoin market price. The line plots on the diagonal are the densities of the respective measures. In addition, Pearson's correlation coefficient - the same from Fig.~\ref {fig:correlation_matrix} - is shown. It is observed that the number of transactions, the average block size, and the hash rate reveals a significant correlation to the market price.\relax }{figure.caption.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Autocorrelation of the Bitcoin market price. The Bitcoin market price has an autocorrelation larger than $0.5$ for a lag of $100$ days. It is expected that prediction algorithms make use of this time interval for their predictions.\relax }}{7}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:autocorrelation}{{5}{7}{Autocorrelation of the Bitcoin market price. The Bitcoin market price has an autocorrelation larger than $0.5$ for a lag of $100$ days. It is expected that prediction algorithms make use of this time interval for their predictions.\relax }{figure.caption.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Example from the binary classification dataset on the Bitcoin market price direction. The features include the past Bitcoin market price and the three selected time series. The label is the Bitcoin market price direction one day into the future.\relax }}{8}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:example}{{6}{8}{Example from the binary classification dataset on the Bitcoin market price direction. The features include the past Bitcoin market price and the three selected time series. The label is the Bitcoin market price direction one day into the future.\relax }{figure.caption.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Transformation to Binary Classification Dataset}{8}{subsection.2.2}\protected@file@percent }
+\newlabel{fig:sub1}{{7a}{9}{training examples\relax }{figure.caption.8}{}}
+\newlabel{sub@fig:sub1}{{a}{9}{training examples\relax }{figure.caption.8}{}}
+\newlabel{fig:sub2}{{7b}{9}{test examples\relax }{figure.caption.8}{}}
+\newlabel{sub@fig:sub2}{{b}{9}{test examples\relax }{figure.caption.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Split of the binary classification dataset into a training and a test part. Both sets are balanced because the contain both labels roughly the same times.\relax }}{9}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:test}{{7}{9}{Split of the binary classification dataset into a training and a test part. Both sets are balanced because the contain both labels roughly the same times.\relax }{figure.caption.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Theory}{10}{section.3}\protected@file@percent }
+\newlabel{sec:theory}{{3}{10}{Theory}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Majority Predictor}{10}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Logistic Regression}{10}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}K-Nearest Neighbors Algorithm}{10}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Deep Neural Network}{10}{subsection.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Training, Validation, and Test Set \& Cross-Validation}{10}{subsection.3.5}\protected@file@percent }
 \citation{SocialMedia2015}
 \abx@aux@cite{SocialMedia2015}
 \abx@aux@segm{0}{0}{SocialMedia2015}
@@ -56,25 +92,30 @@
 \citation{Binance2021}
 \abx@aux@cite{Binance2021}
 \abx@aux@segm{0}{0}{Binance2021}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces This is a simplified visualization of the Bitcoin blockchain.\relax }}{2}{figure.caption.2}\protected@file@percent }
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{2}{section.1}\protected@file@percent }
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {2}Dataset}{2}{section.2}\protected@file@percent }
-\newlabel{sec:dataset}{{2}{2}{Dataset}{section.2}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Bitcoin Time Series Data}{2}{subsection.2.1}\protected@file@percent }
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Supervised Learning Approach}{2}{subsection.2.2}\protected@file@percent }
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {3}Theory}{2}{section.3}\protected@file@percent }
-\newlabel{sec:theory}{{3}{2}{Theory}{section.3}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {4}Implementation \& Software}{2}{section.4}\protected@file@percent }
-\newlabel{sec:implementation_software}{{4}{2}{Implementation \& Software}{section.4}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {5}Results}{2}{section.5}\protected@file@percent }
-\newlabel{sec:results}{{5}{2}{Results}{section.5}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{2}{section.6}\protected@file@percent }
-\newlabel{sec:discussion}{{6}{2}{Discussion}{section.6}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion \& Outlook}{2}{section.7}\protected@file@percent }
-\newlabel{sec:conclusion_outlook}{{7}{2}{Conclusion \& Outlook}{section.7}{}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces time series of label and features.\relax }}{3}{figure.caption.3}\protected@file@percent }
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces correlation matrix with Pearson's correlation coefficient\relax }}{4}{figure.caption.4}\protected@file@percent }
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces autocorrelation of Bitcoin market price\relax }}{4}{figure.caption.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces accuracy\relax }}{11}{figure.caption.9}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces confusion matrix of majority predictor on test set\relax }}{11}{table.caption.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Implementation \& Software}{11}{section.4}\protected@file@percent }
+\newlabel{sec:implementation_software}{{4}{11}{Implementation \& Software}{section.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Results}{11}{section.5}\protected@file@percent }
+\newlabel{sec:results}{{5}{11}{Results}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Majority Predictor}{11}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Logistic Regression}{11}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}K-Nearest Neighbors Algorithm}{11}{section.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces accuracy\relax }}{12}{figure.caption.11}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces roc curve for logistic predictor\relax }}{12}{figure.caption.12}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces confusion matrix of logistic regression predictor on test set\relax }}{12}{table.caption.13}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces confusion matrix of logistic regression predictor on test set\relax }}{13}{table.caption.14}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces sqrt(VIF) for logistic regression\relax }}{13}{table.caption.15}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces accuracy knn\relax }}{13}{figure.caption.16}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces accuracy knn vs. K\relax }}{14}{figure.caption.17}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces knn ROC\relax }}{14}{figure.caption.18}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces confusion matrix of knn on test set\relax }}{14}{table.caption.20}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces knn K max\relax }}{15}{figure.caption.19}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Deep Neural Network}{15}{section.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8}Discussion}{15}{section.8}\protected@file@percent }
+\newlabel{sec:discussion}{{8}{15}{Discussion}{section.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {9}Conclusion \& Outlook}{15}{section.9}\protected@file@percent }
+\newlabel{sec:conclusion_outlook}{{9}{15}{Conclusion \& Outlook}{section.9}{}}
 \abx@aux@refcontextdefaultsdone
 \abx@aux@defaultrefcontext{0}{Bitcoin2009}{none/global//global/global}
 \abx@aux@defaultrefcontext{0}{MarketCapCompany2021}{none/global//global/global}
@@ -96,5 +137,4 @@
 \abx@aux@defaultlabelprefix{0}{Musk2021}{}
 \abx@aux@defaultlabelprefix{0}{China2021}{}
 \abx@aux@defaultlabelprefix{0}{Binance2021}{}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces supervised learning example using moving window technique\relax }}{5}{figure.caption.6}\protected@file@percent }
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{References}{5}{section.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{References}{16}{section.9}\protected@file@percent }

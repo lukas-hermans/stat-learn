@@ -5,7 +5,6 @@ m_list = 100
 
 raw_data_path = "../data/raw/" 
 save_data_path = "../data/"
-save_moving_window_path = "../data/moving_window/"
 
 #### create dataset from Blockchain.com API ----
 
@@ -130,7 +129,7 @@ for (m in m_list) {
   
   # write data to csv-file
   write.csv(x = win_data, 
-            file = paste(save_moving_window_path, paste("m=", m, ".csv", sep = ""), sep = ""), 
+            file = paste(save_data_path, paste("m=", m, ".csv", sep = ""), sep = ""), 
             row.names = FALSE)
 }
 

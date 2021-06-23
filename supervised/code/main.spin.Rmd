@@ -1,3 +1,5 @@
+
+```{r }
 library(caret)
 library(ggplot2)
 library(reshape2)
@@ -337,3 +339,13 @@ ggroc(roc_knn) + geom_abline(intercept = 1, slope = 1,
 dat = data.frame(m_list, K_hist)
 ggplot(dat, aes(m_list, K_hist)) + geom_line() + 
   xlab("m") + ylab(expression("K"["max"]))
+```
+
+
+
+---
+title: main.R
+author: lukas
+date: '2021-06-23'
+
+---

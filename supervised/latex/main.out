@@ -1,10 +1,19 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{Dataset}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{Bitcoin Time Series Data}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Supervised Learning Approach}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.2}{Transformation to Binary Classification Dataset}{section.2}% 4
 \BOOKMARK [1][-]{section.3}{Theory}{}% 5
-\BOOKMARK [1][-]{section.4}{Implementation \046 Software}{}% 6
-\BOOKMARK [1][-]{section.5}{Results}{}% 7
-\BOOKMARK [1][-]{section.6}{Discussion}{}% 8
-\BOOKMARK [1][-]{section.7}{Conclusion \046 Outlook}{}% 9
-\BOOKMARK [1][-]{section.7}{References}{}% 10
+\BOOKMARK [2][-]{subsection.3.1}{Majority Predictor}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.2}{Logistic Regression}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.3}{K-Nearest Neighbors Algorithm}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.4}{Deep Neural Network}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.5}{Training, Validation, and Test Set \046 Cross-Validation}{section.3}% 10
+\BOOKMARK [1][-]{section.4}{Implementation \046 Software}{}% 11
+\BOOKMARK [1][-]{section.5}{Results}{}% 12
+\BOOKMARK [2][-]{subsection.5.1}{Majority Predictor}{section.5}% 13
+\BOOKMARK [2][-]{subsection.5.2}{Logistic Regression}{section.5}% 14
+\BOOKMARK [1][-]{section.6}{K-Nearest Neighbors Algorithm}{}% 15
+\BOOKMARK [1][-]{section.7}{Deep Neural Network}{}% 16
+\BOOKMARK [1][-]{section.8}{Discussion}{}% 17
+\BOOKMARK [1][-]{section.9}{Conclusion \046 Outlook}{}% 18
+\BOOKMARK [1][-]{section.9}{References}{}% 19
