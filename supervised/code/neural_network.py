@@ -119,11 +119,11 @@ for m in m_list:
 
 # plot accuracy
 plt.figure(figsize=(5, 3))
-plt.plot(m_list, acc_train, label="training", color="salmon")
-plt.plot(m_list, acc, label="validation", color="darkturquoise")
+plt.plot(m_list, 100 * np.array(acc_train), label="training", color="salmon")
+plt.plot(m_list, 100 * np.array(acc), label="validation", color="darkturquoise")
 #plt.vlines(m_max, , ymax, kwargs)
 plt.xlabel(r"$m$")
-plt.ylabel("accuracy")
+plt.ylabel("accuracy [%]")
 plt.legend()
 plt.grid()
 plt.tight_layout()
@@ -225,10 +225,10 @@ history = model.fit(features_train_m_max[ind_train, :],
                     verbose=2)
 
 plt.figure(figsize=(5, 3))
-plt.plot(np.arange(1, n_epochs + 1), history.history["accuracy"], label="training", color="salmon")
-plt.plot(np.arange(1, n_epochs + 1), history.history["val_accuracy"], label="validation", color="darkturquoise")
+plt.plot(np.arange(1, n_epochs + 1), 100 * np.array(history.history["accuracy"]), label="training", color="salmon")
+plt.plot(np.arange(1, n_epochs + 1), 100 * np.array(history.history["val_accuracy"]), label="validation", color="darkturquoise")
 plt.xlabel(r"$N_{epoch}$")
-plt.ylabel("accuracy")
+plt.ylabel("accuracy [%]")
 plt.legend()
 plt.grid()
 plt.tight_layout()

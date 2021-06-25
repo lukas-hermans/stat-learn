@@ -1,14 +1,21 @@
-\begin{table}
+Tab.~\ref{tab:comparison} contains a comparison of the accuracy, sensitivity, and specificity of the majority predictor and the different machine learning algorithms on the test set.
+
+\begin{table}[h!]
 \centering
-\begin{tabular}{c||c|c|c|c}
-   & major. pred. & log. reg. & KNN & DNN \\
-accuracy & \\
+\begin{tabular}{c||c|c|c}
+   & accuracy [\%] & sensitivity [\%] & specificity [\%] \\
+   \hline
+   \hline
+major. pred. & $55.54$ & $100.00$ & $0.00$\\
 \hline
-sensitivity & \\ 
+log. reg. & $56.70$ & $81.09$ & $24.92$ \\ 
 \hline
-specifity & 
+KNN & $51.80$ & $65.54$ & $37.21$ \\
+\hline
+DNN & $55.54$ & $100.00$ & $0.00$
 \end{tabular}
- \caption{comparison}
+ \caption{Comparison of the accuracy, sensitivity, and specificity of the majority predictor and the different machine learning algorithms on the test set.}
+ \label{tab:comparison}
 \end{table}
 
 

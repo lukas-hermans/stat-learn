@@ -10,9 +10,15 @@
 \begin{abstract} 
 \noindent
 \fontdimen2\font=0.7ex% inter word space
-- rising importance of Bitcoin (market cap comparable to large multinational companies such as Facebook and Tesla)
-- volatility higher than stockmarket, different asset with different underlying mechanisms, relativily new, Blockchain
-- current object of research: Bitcoin price prediction offers trader advantage over non-rational traders
-- here: focus on classification of Bitcoin price (up or down)
-- key findings: development of binary classification dataset starting from Bitcoin time series data, 
+The market price of the cryptocurrency Bitcoin has increased impressively since Bitcoin's first occurrence in 2009. Today, its market cap is comparable to the market cap of companies like Facebook and Tesla at the stock market. The differences of Bitcoin to classical financial assets like shares lie in the underlying blockchain technology. This makes Bitcoin an interesting asset for investors and traders, and gives rise to scientific studies on the market price development of Bitcoin. 
+
+\noindent
+The scope of the present work is the prediction of tomorrow's Bitcoin market price based on data from today and the past days. The starting point is the development of a dataset that transforms the market price prediction into a binary classification problem. Then, the goal is to simply predict if the Bitcoin market price will increase (go \enquote{up}) or decrease (go \enquote{down}) but not to estimate the exact market price of tomorrow. 
+
+\noindent
+For this purpose, overall, four different learning algorithms are trained on the binary classification dataset. The analysis reveals that a simple majority predictor - that constantly predicts that the Bitcoin market price will increase - leads to a prediction accuracy of \SI{55.54}{\percent} with a sensitivity of \SI{100}{\percent} but a specificity of \SI{0.00}{\percent}. The application of a deep neural network for various settings reproduces the majority predictor, and does not seem to be suitable for the binary classification of tomorrow's Bitcoin market price. The highest accuracy of \SI{56.70}{\percent} is obtained with a logistic regression. The K-nearest neighbors algorithm leads to a comparaly low accuracy of \SI{51.80}{\percent}. In contrast to the majority predictor and the deep neural network, the logistic regression and the K-nearest neighbors algorithm lead to predictors with a more balanced sensitivity and specificity. 
+
+\noindent
+In the present work, it is also discussed how a successful implementation of a neural network might be possible, and how the prediction accuracies could be increased by including more information like social media and Google search analysis in the binary classification dataset.
+
 \end{abstract}

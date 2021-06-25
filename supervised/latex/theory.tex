@@ -1,11 +1,27 @@
-\subsection{Majority Predictor}
+The development of a binary classification dataset in the last Section has reduced the Bitcoin prediction task into a supervised learning problem. There are several machine learning algorithms that can be used for binary classification. In the present work, the logistic regression, the K-nearest neighbor algorithm, and a deep neural network are considered as algorithms to predict tomorrow's Bitcoin price direction. In this Section, a few theoretical basics of these machine learning algorithms are summarized. The Section is concluded with a Subsection on techniques that allow the optimization of hyperparameters as well as the perfomance evaluation of these algorithms on the binary classification dataset. The discussion in this theory Section is by no means complete. For more information on the covered topics, the reader is refered to the literature, e.g. \cite{stat_2014}.
 
 \subsection{Logistic Regression}
+The logistic regression is the classification counterpart of the linear regression. It models the probability $p$ for an increasing Bitcoin market price tomorrow with
+\begin{align}\label{eq:log_reg}
+	p(\vec{x}) = \frac{e^{\beta_0 + \vec{\beta} \cdot \vec{x}}}{1 + e^{\beta_0 + \vec{\beta} \cdot \vec{x}}},
+\end{align}
+where $\vec{x}$ contains all features (i.e. the Bitcoin market price, the number of transactions, and so on), and $\beta_0$ and $\vec{\beta}$ are trainable coefficients. The analogy to the linear regression becomes clear after rewriting Eq.~\ref{eq:log_reg} as follows:
+\begin{align}\label{eq:log_odds}
+	\log \left(\frac{p(\vec{x})}{1 - p(\vec{x})} \right) = \beta_0 + \vec{\beta} \cdot \vec{x}.
+\end{align}
+This quantity is also called the \textit{log-odds}. The righthand side of Eq.~\ref{eq:log_odds} is a linear function of $\vec{x}$. The parameters $\beta_0$ and $\vec{\beta}$ are estimated given a training dataset by computing the so-called maximum-likelihood estimation.	
 
 \subsection{K-Nearest Neighbors Algorithm}
+The K-nearest neighbor algorithm interprets the feature vectors $\vec{x}$ as points in a (high-dimensional) space. It makes predictions by computing the Euclidian distance of all training points to a new point. The predicted label is the majority label of the $K$ nearest neighbors to the new point. Typically, $K$ is an odd number. It is also possible to compute prediction probabilities by considering the label distribution of the $K$ nearest neighbors training points. From the machine learning algorithms presented in the present work, it is the only non-parametric one.
 
 \subsection{Deep Neural Network}
+Arguably, deep neural networks are the most complex machine learning algorithm applied in the present work. They consist of several layers of neurons, inspired by the structure of the human brain. The first layer is called input layer. The number of neurons of the input layer is determined by the number of features, i.e. the dimension of $\vec{x}$. The neurons of the input layer are connected with the neurons of the first hidden layer. These neurons are again connected with the neurons of the second hidden layer, and so on. The final layer is called output layer. The number of neurons of the output layer is specified by the number of classes of the label. In the case of binary classification it consists of two neurons. \\
 
-\subsection{Training, Validation, and Test Set \& Cross-Validation}
+Hyperparameters of a deep neural network are the number of hidden layers, and the number of neurons in each hidden layer. In addition, the so-called activation function of the neurons has to be choosen. In the present work, all the neurons in the hidden layer use the ReLU activation function. The final layer applies the softmax function which allows the interpretation of the output of the deep neural network as probabilities. Finally, the number of epochs $N_{epoch}$ can be specified. It describes the number of times for which the deep neural network should be trained over the whole training set. For the training, the training set is divided into $N_{batch}$ batches. Here, $N_{batch} = 32$ batches are used. \\
 
-\clearpage
+The deep neural network is trained using an optimizer. In present work, the Adam optimizer is used. As the loss function, the binary cross-entropy is used.
+
+\subsection{Hyperparameter Optimization \& Performance Evaluation}
+As already explained in Sec.~\ref{sec:dataset}, the binary classification dataset is split into a training and a test set. The training set is used to train the machine learning algorithms. For the optimization of hyperparameters during the training phase, the training set is further split into a new (slightly smaller) training set and into a validation set. For each hyperparameter, the machine learning algorithm is trained on the new training set and its performance is evaluated on the validation set. In the present work, the performance is simply measured by the prediction accuracy on the respective set. The best hyperparameter maximizes the performance of the machine learning algorithm on the validation set. Then, the machine learning algorithm for the optimal hyperparameters is retrained on the whole training set. Finally, the performance of the machine learning algorithm is evaluated on the test set. The idea is that the test set should only be used after the training and the search for the best hyperparameters in order to be able to estimate the performance of the machine learning algorithm on unseen data. This approach is called \textit{training-, validation-, and test-split}.\\
+
+A more sophisticated approach is to optimize the hyperparameters by repeating the split into training and validation set $M$ times. The machine learning algortihm is then trained on all of the training sets and its performance is evaluated on the respective validation set. This approach is called \textit{M-fold cross-validation}. In this case, the average performance of the machine learning algorithm on the validation sets is a more accurate estimate for the actual test accuracy on unseen data. In the present work, $M=10$ is choosen.

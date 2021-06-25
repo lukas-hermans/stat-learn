@@ -80,6 +80,25 @@
     \field{urlyear}{2021}
   \endentry
 
+  \entry{bitcoin_book_2018}{book}{}
+    \name{author}{1}{}{%
+      {{hash=LA}{%
+         family={Lewis},
+         familyi={L\bibinitperiod},
+         given={Antony},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LA1}
+    \strng{fullhash}{LA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{1633538001}
+    \field{title}{The Basics of Bitcoins and Blockchains: An Introduction to
+  Cryptocurrencies and the Technology That Powers Them}
+    \field{year}{2018}
+  \endentry
+
   \entry{Data}{online}{}
     \name{author}{1}{}{%
       {{hash=B}{%
@@ -99,6 +118,43 @@
     \field{urlday}{16}
     \field{urlmonth}{06}
     \field{urlyear}{2021}
+  \endentry
+
+  \entry{stat_2014}{book}{}
+    \name{author}{4}{}{%
+      {{hash=JG}{%
+         family={James},
+         familyi={J\bibinitperiod},
+         given={Gareth},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=WD}{%
+         family={Witten},
+         familyi={W\bibinitperiod},
+         given={Daniela},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=HT}{%
+         family={Hastie},
+         familyi={H\bibinitperiod},
+         given={Trevor},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=TR}{%
+         family={Tibshirani},
+         familyi={T\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JG+1}
+    \strng{fullhash}{JGWDHTTR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{1461471370}
+    \field{title}{An Introduction to Statistical Learning: With Applications in
+  R}
+    \field{year}{2014}
   \endentry
 
   \entry{SocialMedia2015}{inproceedings}{}
