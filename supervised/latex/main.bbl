@@ -157,6 +157,74 @@
     \field{year}{2014}
   \endentry
 
+  \entry{prediction_2019}{article}{}
+    \name{author}{3}{}{%
+      {{hash=JS}{%
+         family={Ji},
+         familyi={J\bibinitperiod},
+         given={Suhwan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Jongmin},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=IH}{%
+         family={Im},
+         familyi={I\bibinitperiod},
+         given={Hyeonseung},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JSKJIH1}
+    \strng{fullhash}{JSKJIH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{issn}{2227-7390}
+    \field{number}{10}
+    \field{title}{A Comparative Study of Bitcoin Price Prediction Using Deep
+  Learning}
+    \verb{url}
+    \verb https://www.mdpi.com/2227-7390/7/10/898
+    \endverb
+    \field{volume}{7}
+    \field{journaltitle}{Mathematics}
+    \field{year}{2019}
+  \endentry
+
+  \entry{prediction2_2019}{article}{}
+    \name{author}{2}{}{%
+      {{hash=ST}{%
+         family={Shintate},
+         familyi={S\bibinitperiod},
+         given={Takuya},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=PL}{%
+         family={Pichl},
+         familyi={P\bibinitperiod},
+         given={Lukáš},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{STPL1}
+    \strng{fullhash}{STPL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{issn}{1911-8074}
+    \field{number}{1}
+    \field{title}{Trend Prediction Classification for High Frequency Bitcoin
+  Time Series with Deep Learning}
+    \verb{url}
+    \verb https://www.mdpi.com/1911-8074/12/1/17
+    \endverb
+    \field{volume}{12}
+    \field{journaltitle}{Journal of Risk and Financial Management}
+    \field{year}{2019}
+  \endentry
+
   \entry{SocialMedia2015}{inproceedings}{}
     \name{author}{3}{}{%
       {{hash=MM}{%
@@ -214,30 +282,6 @@
     \field{title}{Bitcoin Price Prediction Through Opinion Mining}
     \field{month}{05}
     \field{year}{2019}
-  \endentry
-
-  \entry{Classification2015}{inproceedings}{}
-    \name{author}{2}{}{%
-      {{hash=GA}{%
-         family={Greaves},
-         familyi={G\bibinitperiod},
-         given={A.},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=AB}{%
-         family={Au},
-         familyi={A\bibinitperiod},
-         given={Benjamin},
-         giveni={B\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{GAAB1}
-    \strng{fullhash}{GAAB1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Using the Bitcoin Transaction Graph to Predict the Price of
-  Bitcoin}
-    \field{year}{2015}
   \endentry
 
   \entry{Musk2021}{online}{}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.21)  25 JUN 2021 10:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.21)  25 JUN 2021 20:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1025,14 +1025,15 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 9.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 19.
-) (./main.toc
-[1
+) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./main.toc)
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [2] (./introduction.tex
+ [2
+
+] (./introduction.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
  []
@@ -1053,7 +1054,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
 
-) [3 <./images/bitcoin_blockchain.pdf>] (./dataset.tex
+) [3 <./images/bitcoin_blockchain.pdf>] [4] (./dataset.tex
 Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
@@ -1073,22 +1074,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-[4]
-<./images/data.pdf, id=179, 289.08pt x 361.35pt>
+<./images/data.pdf, id=175, 289.08pt x 361.35pt>
 File: ./images/data.pdf Graphic file (type pdf)
 <use ./images/data.pdf>
 Package pdftex.def Info: ./images/data.pdf  used on input line 17.
 (pdftex.def)             Requested size: 452.9679pt x 566.24007pt.
-<./images/cor_mat.pdf, id=182, 627.34375pt x 414.54875pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./images/cor_mat.pdf, id=178, 627.34375pt x 414.54875pt>
 File: ./images/cor_mat.pdf Graphic file (type pdf)
 <use ./images/cor_mat.pdf>
 Package pdftex.def Info: ./images/cor_mat.pdf  used on input line 24.
 (pdftex.def)             Requested size: 326.13744pt x 215.51598pt.
 
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./images/all_vs_all.pdf, id=187, 442.65375pt x 414.54875pt>
+<./images/all_vs_all.pdf, id=183, 442.65375pt x 414.54875pt>
 File: ./images/all_vs_all.pdf Graphic file (type pdf)
 <use ./images/all_vs_all.pdf>
 Package pdftex.def Info: ./images/all_vs_all.pdf  used on input line 31.
@@ -1101,16 +1103,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
 
-[5 <./images/data.pdf>]
+[5] [6 <./images/data.pdf>]
 
-LaTeX Warning: Text page 6 contains only floats.
+LaTeX Warning: Text page 7 contains only floats.
 
-[6 <./images/cor_mat.pdf> <./images/all_vs_all.pdf
+[7 <./images/cor_mat.pdf> <./images/all_vs_all.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/all_vs_all.pdf): PDF inclusion
 : multiple pdfs with page group included in a single page
 >]
-<./images/autocorrelation.pdf, id=251, 433.62pt x 216.81pt>
+<./images/autocorrelation.pdf, id=256, 433.62pt x 216.81pt>
 File: ./images/autocorrelation.pdf Graphic file (type pdf)
 <use ./images/autocorrelation.pdf>
 Package pdftex.def Info: ./images/autocorrelation.pdf  used on input line 44.
@@ -1125,28 +1127,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
-[7 <./images/autocorrelation.pdf>]
-<./images/moving_window.pdf, id=277, 246.9225pt x 80.2197pt>
+<./images/moving_window.pdf, id=262, 246.9225pt x 80.2197pt>
 File: ./images/moving_window.pdf Graphic file (type pdf)
 <use ./images/moving_window.pdf>
 Package pdftex.def Info: ./images/moving_window.pdf  used on input line 63.
 (pdftex.def)             Requested size: 452.9679pt x 147.16782pt.
-<./images/balance_train.pdf, id=280, 442.65375pt x 414.54875pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./images/balance_train.pdf, id=265, 442.65375pt x 414.54875pt>
 File: ./images/balance_train.pdf Graphic file (type pdf)
 <use ./images/balance_train.pdf>
 Package pdftex.def Info: ./images/balance_train.pdf  used on input line 72.
 (pdftex.def)             Requested size: 226.48395pt x 212.10654pt.
-<./images/balance_test.pdf, id=281, 442.65375pt x 414.54875pt>
+<./images/balance_test.pdf, id=266, 442.65375pt x 414.54875pt>
 File: ./images/balance_test.pdf Graphic file (type pdf)
 <use ./images/balance_test.pdf>
 Package pdftex.def Info: ./images/balance_test.pdf  used on input line 78.
 (pdftex.def)             Requested size: 226.48395pt x 212.10654pt.
-) (./theory.tex [8 <./images/moving_window.pdf> <./images/balance_train.pdf> <.
-/images/balance_test.pdf
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [8 <./images/autocorrelation.pdf>] [9 <./images/moving_window.pdf> <./images/
+balance_train.pdf> <./images/balance_test.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/balance_test.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
->]
+>] (./theory.tex
 Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
@@ -1156,12 +1163,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
+[10
 
+]
 Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
-[9]) (./implementation_software.tex
+) [11] (./implementation_software.tex
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 4
 .
  (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
@@ -1169,7 +1178,6 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
 1.
-
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1183,7 +1191,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-) (./results.tex
+) [12] (./results.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
  []
@@ -1193,66 +1201,67 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
 
-[10]
-<./images/major_acc_vs_m.pdf, id=342, 361.35pt x 216.81pt>
+<./images/major_acc_vs_m.pdf, id=348, 361.35pt x 216.81pt>
 File: ./images/major_acc_vs_m.pdf Graphic file (type pdf)
 <use ./images/major_acc_vs_m.pdf>
 Package pdftex.def Info: ./images/major_acc_vs_m.pdf  used on input line 12.
 (pdftex.def)             Requested size: 362.37569pt x 217.4281pt.
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
-[11 <./images/major_acc_vs_m.pdf>]
-<./images/log_acc_vs_m.pdf, id=360, 361.35pt x 216.81pt>
+[13 <./images/major_acc_vs_m.pdf>]
+<./images/log_acc_vs_m.pdf, id=368, 361.35pt x 216.81pt>
 File: ./images/log_acc_vs_m.pdf Graphic file (type pdf)
 <use ./images/log_acc_vs_m.pdf>
-Package pdftex.def Info: ./images/log_acc_vs_m.pdf  used on input line 48.
+Package pdftex.def Info: ./images/log_acc_vs_m.pdf  used on input line 54.
 (pdftex.def)             Requested size: 362.37569pt x 217.4281pt.
-<./images/log_roc.pdf, id=361, 361.35pt x 216.81pt>
+<./images/log_roc.pdf, id=369, 361.35pt x 216.81pt>
 File: ./images/log_roc.pdf Graphic file (type pdf)
 <use ./images/log_roc.pdf>
-Package pdftex.def Info: ./images/log_roc.pdf  used on input line 55.
+Package pdftex.def Info: ./images/log_roc.pdf  used on input line 61.
 (pdftex.def)             Requested size: 362.37569pt x 217.4281pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[12 <./images/log_acc_vs_m.pdf> <./images/log_roc.pdf
+[14 <./images/log_acc_vs_m.pdf>] [15 <./images/log_roc.pdf>] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/log_roc.pdf): PDF inclusion: m
-ultiple pdfs with page group included in a single page
->] [13]
-<./images/knn_acc_vs_m.pdf, id=404, 361.35pt x 216.81pt>
-File: ./images/knn_acc_vs_m.pdf Graphic file (type pdf)
-<use ./images/knn_acc_vs_m.pdf>
-Package pdftex.def Info: ./images/knn_acc_vs_m.pdf  used on input line 163.
-(pdftex.def)             Requested size: 362.37569pt x 217.4281pt.
+ []
 
-
-LaTeX Warning: Reference `T' on page 14 undefined on input line 164.
-
-
-LaTeX Warning: Reference `T' on page 14 undefined on input line 164.
-
-<./images/knn_acc_vs_K.pdf, id=405, 361.35pt x 216.81pt>
-File: ./images/knn_acc_vs_K.pdf Graphic file (type pdf)
-<use ./images/knn_acc_vs_K.pdf>
-Package pdftex.def Info: ./images/knn_acc_vs_K.pdf  used on input line 170.
-(pdftex.def)             Requested size: 362.37569pt x 217.4281pt.
-<./images/knn_K_max.pdf, id=406, 361.35pt x 216.81pt>
+<./images/knn_K_max.pdf, id=419, 361.35pt x 216.81pt>
 File: ./images/knn_K_max.pdf Graphic file (type pdf)
 <use ./images/knn_K_max.pdf>
-Package pdftex.def Info: ./images/knn_K_max.pdf  used on input line 177.
+Package pdftex.def Info: ./images/knn_K_max.pdf  used on input line 175.
+(pdftex.def)             Requested size: 362.37569pt x 217.4281pt.
+<./images/knn_acc_vs_m.pdf, id=420, 361.35pt x 216.81pt>
+File: ./images/knn_acc_vs_m.pdf Graphic file (type pdf)
+<use ./images/knn_acc_vs_m.pdf>
+Package pdftex.def Info: ./images/knn_acc_vs_m.pdf  used on input line 182.
 (pdftex.def)             Requested size: 362.37569pt x 217.4281pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./images/knn_roc.pdf, id=407, 361.35pt x 216.81pt>
+<./images/knn_acc_vs_K.pdf, id=423, 361.35pt x 216.81pt>
+File: ./images/knn_acc_vs_K.pdf Graphic file (type pdf)
+<use ./images/knn_acc_vs_K.pdf>
+Package pdftex.def Info: ./images/knn_acc_vs_K.pdf  used on input line 189.
+(pdftex.def)             Requested size: 362.37569pt x 217.4281pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./images/knn_roc.pdf, id=427, 361.35pt x 216.81pt>
 File: ./images/knn_roc.pdf Graphic file (type pdf)
 <use ./images/knn_roc.pdf>
-Package pdftex.def Info: ./images/knn_roc.pdf  used on input line 184.
+Package pdftex.def Info: ./images/knn_roc.pdf  used on input line 200.
 (pdftex.def)             Requested size: 362.37569pt x 217.4281pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1261,85 +1270,128 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
 
-<./images/dnn_acc_vs_m.pdf, id=408, 361.35pt x 216.81pt>
-File: ./images/dnn_acc_vs_m.pdf Graphic file (type pdf)
-<use ./images/dnn_acc_vs_m.pdf>
-Package pdftex.def Info: ./images/dnn_acc_vs_m.pdf  used on input line 219.
-(pdftex.def)             Requested size: 362.37569pt x 217.4281pt.
+ []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+[17
 
-<./images/dnn_acc_vs_N.pdf, id=409, 361.35pt x 216.81pt>
-File: ./images/dnn_acc_vs_N.pdf Graphic file (type pdf)
-<use ./images/dnn_acc_vs_N.pdf>
-Package pdftex.def Info: ./images/dnn_acc_vs_N.pdf  used on input line 225.
-(pdftex.def)             Requested size: 362.37569pt x 217.4281pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<./images/dnn_N_max.pdf, id=410, 361.35pt x 216.81pt>
-File: ./images/dnn_N_max.pdf Graphic file (type pdf)
-<use ./images/dnn_N_max.pdf>
-Package pdftex.def Info: ./images/dnn_N_max.pdf  used on input line 231.
-(pdftex.def)             Requested size: 362.37569pt x 217.4281pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) (./discussion.tex [14 <./images/knn_acc_vs_m.pdf> <./images/knn_acc_vs_K.pdf
+ <./images/knn_K_max.pdf>] [18 <./images/knn_acc_vs_m.pdf> <./images/knn_acc_vs
+_K.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/knn_acc_vs_K.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
->] [15 <./images/knn_K_max.pdf> <./images/knn_roc.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./images/knn_roc.pdf): PDF inclusion: m
-ultiple pdfs with page group included in a single page
 >]
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--237
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
+
+ []
+
+<./images/dnn_N_max.pdf, id=472, 361.35pt x 216.81pt>
+File: ./images/dnn_N_max.pdf Graphic file (type pdf)
+<use ./images/dnn_N_max.pdf>
+Package pdftex.def Info: ./images/dnn_N_max.pdf  used on input line 244.
+(pdftex.def)             Requested size: 362.37569pt x 217.4281pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [16 <./images/dnn_acc_vs_m.pdf> <./images/dnn_acc_vs_N.pdf
+<./images/dnn_acc_vs_N.pdf, id=473, 361.35pt x 216.81pt>
+File: ./images/dnn_acc_vs_N.pdf Graphic file (type pdf)
+<use ./images/dnn_acc_vs_N.pdf>
+Package pdftex.def Info: ./images/dnn_acc_vs_N.pdf  used on input line 251.
+(pdftex.def)             Requested size: 362.37569pt x 217.4281pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[19 <./images/knn_roc.pdf>] [20 <./images/dnn_N_max.pdf> <./images/dnn_acc_vs_N
+.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/dnn_acc_vs_N.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
->] (./conclusion_outlook.tex) [17 <./images/dnn_N_max.pdf>]
-Overfull \hbox (11.1943pt too wide) in paragraph at lines 42--42
+>]
+<./images/dnn_acc_vs_m.pdf, id=568, 361.35pt x 216.81pt>
+File: ./images/dnn_acc_vs_m.pdf Graphic file (type pdf)
+<use ./images/dnn_acc_vs_m.pdf>
+Package pdftex.def Info: ./images/dnn_acc_vs_m.pdf  used on input line 260.
+(pdftex.def)             Requested size: 362.37569pt x 217.4281pt.
+) [21
+
+ <./images/dnn_acc_vs_m.pdf>] (./discussion.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--2
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+
+ []
+
+) [22] (./conclusion_outlook.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--2
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+) [23]
+Overfull \hbox (11.1943pt too wide) in paragraph at lines 50--50
 []\T1/lmr/m/n/10 CoinMarketCap. \T1/lmr/m/it/10 To-day's Cryp-tocur-rency Price
 s by Mar-ket Cap\T1/lmr/m/n/10 . 2021. \T1/lmr/m/sc/10 url\T1/lmr/m/n/10 : []$\
 T1/lmtt/m/n/10 https : / / coinmarketcap .
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 43.
-[18]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 43.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.
+[24]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 43.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 43.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 51.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 51.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C4A426AC2A1E462340D40D49F744C1BF;1160.
-
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Checksum: D0D69514BB1EC562192709902E1EE702;1147.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20613 strings out of 483065
- 382228 string characters out of 5963550
- 964434 words of memory out of 5000000
- 35139 multiletter control sequences out of 15000+600000
- 620370 words of font info for 89 fonts, out of 8000000 for 9000
+ 20629 strings out of 483065
+ 382524 string characters out of 5963550
+ 965559 words of memory out of 5000000
+ 35147 multiletter control sequences out of 15000+600000
+ 623351 words of font info for 90 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 51i,15n,52p,1578b,2397s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 51i,15n,52p,1578b,1690s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/shar
 e/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ma
@@ -1357,10 +1409,10 @@ pe1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr
 /share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/pub
 lic/lm/lmsy5.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/
 texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (18 pages, 1384924 bytes).
+Output written on main.pdf (24 pages, 1398842 bytes).
 PDF statistics:
- 704 PDF objects out of 1000 (max. 8388607)
- 516 compressed objects within 6 object streams
- 80 named destinations out of 1000 (max. 500000)
+ 754 PDF objects out of 1000 (max. 8388607)
+ 557 compressed objects within 6 object streams
+ 87 named destinations out of 1000 (max. 500000)
  235 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -5,6 +5,8 @@
 	\fontdimen2\font=0.7ex% inter word space
 
 	\input{titlepage.tex}
+	\thispagestyle{empty}
+	\clearpage
 	\tableofcontents
 	\thispagestyle{empty}
 	
@@ -18,22 +20,28 @@
 	\section{Introduction}
 	\input{introduction.tex}
 	
+	\newpage
 	\section{Dataset}\label{sec:dataset}
 	\input{dataset.tex}
 	
+	\clearpage
 	\section{Theory}\label{sec:theory}
 	\input{theory.tex}
 	
+	\newpage
 	\section{Implementation \& Software}				\label{sec:implementation_software}
 	\input{implementation_software.tex}
 	
+	\newpage
 	\section{Results}\label{sec:results}
 	\input{results.tex}
 	
+	\newpage
 	\section{Discussion}\label{sec:discussion}
 	\input{discussion.tex}
 	
-	\section{Conclusion \& Outlook}\label{sec:conclusion_outlook}
+	\newpage
+	\section{Conclusion}\label{sec:conclusion_outlook}
 	\input{conclusion_outlook.tex}
 
 	\newpage

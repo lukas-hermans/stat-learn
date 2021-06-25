@@ -1,4 +1,10 @@
-Tab.~\ref{tab:comparison} contains a comparison of the accuracy, sensitivity, and specificity of the majority predictor and the different machine learning algorithms on the test set.
+Tab.~\ref{tab:comparison} summarizes the results from the previous Section. The Table states the prediction accuracy, the sensitivity, and the specificity obtained after optimizing the hyperparameters and the length $m$ of the moving window for every learning algorithm.\\
+
+Overall, the logistic regression fit leads to the highest test accuracy of \SI{56.70}{\percent}. The majority predictor (and the deep neural network) has the second highest test accuracy of \SI{55.54}{\percent}. The lowest test accuracy of \SI{51.80}{\percent} is achieved by the K-nearest neighbors algorithm. \\
+
+Apart from their different test accuracies, the algorithms differ also in their sensitivity and specificity. The majority predictor does not predict decreasing Bitcoin market prices at all. The logistic regression fit and the K-nearest neighbors algorithm have larger specificities at the cost of lower sensitivities.\\
+
+Given these differences between the machine learning algorithms, the choice of the most suitable algorithm for traders depends on the specific investment strategy. E.g., for some traders it might be more important to predict decreasing Bitcoin market prices. Then, algorithms with a larger specificity like the K-nearest neighbors algorithm might be desirable. The development and evaluation of an investment strategy goes beyond the scope of the present work, and is discussed in other publications \cite{prediction_2019}\cite{prediction2_2019}.
 
 \begin{table}[h!]
 \centering
@@ -14,13 +20,12 @@ KNN & $51.80$ & $65.54$ & $37.21$ \\
 \hline
 DNN & $55.54$ & $100.00$ & $0.00$
 \end{tabular}
- \caption{Comparison of the accuracy, sensitivity, and specificity of the majority predictor and the different machine learning algorithms on the test set.}
+ \caption{Comparison of the prediction accuracy, the sensitivity, and the specificity of the majority predictor and the different machine learning algorithms on the test set. The reported values refer to the optimal hyperparameters that are obtained in Section~\ref{sec:results}.}
  \label{tab:comparison}
 \end{table}
 
+The comparably poor performance of the deep neural network might be resolved by applying more complex neural networks. In particular, long short-term memory neural networks could be suitable as they implement a hierarchy in the input data, and are reported to perform well for time series forecasting applications.\\
 
-- more complex neural networks
-- time series techniques
-- Google searches \cite{SocialMedia2015}, Twitter \cite{Twitter2019}
-- consider individual transactions \cite{Classification2015}
-- predict major crashes \cite{Musk2021} \cite{China2021} \cite{Binance2021}
+In general, there are other techniques that are specified for time series forecasting applications that do not require a supervised learning dataset but work with the whole time series, and implement cyclic and seasonal effects. Using these techniques, higher performances could be possible.\\
+
+Moreover, the prediciton performance of the machine learning algorithms can be improved by considering other features, e.g. Bitcoin-related Google searches or trends deduced from social networks like Twitter \cite{SocialMedia2015}\cite{Twitter2019}. The inclusion of these features might also allow the prediction of crashes of the Bitcoin market price which are often the consequence of previous events. E.g., in May 2021 the Bitcoin market price collapsed when Tesla-CEO Elon Musk criticized the high CO$_2$ emissions of Bitcoin miners, China acted against Bitcoin mining, and an investigation against the world's largest cryptocurrency exchange Binance was opened in the USA \cite{Musk2021}\cite{China2021}\cite{Binance2021}.

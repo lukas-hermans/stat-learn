@@ -38,97 +38,111 @@
 \abx@aux@cite{bitcoin_book_2018}
 \abx@aux@segm{0}{0}{bitcoin_book_2018}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{3}{section.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Simplified illustration of the Bitcoin blockchain starting from the first block nr. $1$ that is also called genesis block, and was mined by Satoshi Nakamoto. Each block contains information on Bitcoin transactions for time periods of roughly $10$ minutes. Suppose, the current length of the Bitcoin blockchain is given by $n$ blocks. The addition of a new block with the nr. $n+1$ to the blockchain is called Bitcoin mining, and is achieved by investing computing power in solving a mathematical task.\relax }}{3}{figure.caption.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Simplified illustration of the Bitcoin blockchain starting from the first block nr. $1$ that is also called genesis block, and was mined by Satoshi Nakamoto in 2009. Each block contains information on Bitcoin transactions for time periods of roughly $10$ minutes. Suppose, the current length of the Bitcoin blockchain is given by $n$ blocks. The addition of a new block with the nr. $n+1$ to the blockchain is called Bitcoin mining, and is achieved by investing computing power in solving a mathematical task.\relax }}{3}{figure.caption.2}\protected@file@percent }
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig:blockchain}{{1}{3}{Simplified illustration of the Bitcoin blockchain starting from the first block nr. $1$ that is also called genesis block, and was mined by Satoshi Nakamoto. Each block contains information on Bitcoin transactions for time periods of roughly $10$ minutes. Suppose, the current length of the Bitcoin blockchain is given by $n$ blocks. The addition of a new block with the nr. $n+1$ to the blockchain is called Bitcoin mining, and is achieved by investing computing power in solving a mathematical task.\relax }{figure.caption.2}{}}
-\citation{Data}
-\abx@aux@cite{Data}
-\abx@aux@segm{0}{0}{Data}
-\@writefile{toc}{\contentsline {section}{\numberline {2}Dataset}{4}{section.2}\protected@file@percent }
-\newlabel{sec:dataset}{{2}{4}{Dataset}{section.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Bitcoin Time Series Data}{4}{subsection.2.1}\protected@file@percent }
-\newlabel{subsec:time_series_data}{{2.1}{4}{Bitcoin Time Series Data}{subsection.2.1}{}}
+\newlabel{fig:blockchain}{{1}{3}{Simplified illustration of the Bitcoin blockchain starting from the first block nr. $1$ that is also called genesis block, and was mined by Satoshi Nakamoto in 2009. Each block contains information on Bitcoin transactions for time periods of roughly $10$ minutes. Suppose, the current length of the Bitcoin blockchain is given by $n$ blocks. The addition of a new block with the nr. $n+1$ to the blockchain is called Bitcoin mining, and is achieved by investing computing power in solving a mathematical task.\relax }{figure.caption.2}{}}
 \citation{Data}
 \abx@aux@cite{Data}
 \abx@aux@segm{0}{0}{Data}
 \citation{Data}
 \abx@aux@cite{Data}
 \abx@aux@segm{0}{0}{Data}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Bitcoin day-by-day time series data obtained from the Blockchain.com API, see \cite {Data}. The time series of the Bitcoin market price and the other displayed measures are reported for the time period from \date {01 September 2011} to \date {15 June 2021}. This is a total of $3576$ days. The different measures are explained in the main text.\relax }}{5}{figure.caption.3}\protected@file@percent }
-\newlabel{fig:blockchain.api}{{2}{5}{Bitcoin day-by-day time series data obtained from the Blockchain.com API, see \cite {Data}. The time series of the Bitcoin market price and the other displayed measures are reported for the time period from \date {01 September 2011} to \date {15 June 2021}. This is a total of $3576$ days. The different measures are explained in the main text.\relax }{figure.caption.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Pearson's correlation matrix of the time series from Fig.~\ref  {fig:blockchain.api}. As the market cap, the difficulty, and the miner's revenue have a correlation coefficient of $0.8$ or higher, these measures are not expected to be useful for the prediction of tomorrow's Bitcoin market price. In contrast, the transaction volume is weakly correlated with the Bitcoin market price and the other measures, and does not contain any time-dependent information. Thus, it is also dropped. An overview of the remaining measures can be found in Fig.~\ref  {fig:all_vs_all}.\relax }}{6}{figure.caption.4}\protected@file@percent }
-\newlabel{fig:correlation_matrix}{{3}{6}{Pearson's correlation matrix of the time series from Fig.~\ref {fig:blockchain.api}. As the market cap, the difficulty, and the miner's revenue have a correlation coefficient of $0.8$ or higher, these measures are not expected to be useful for the prediction of tomorrow's Bitcoin market price. In contrast, the transaction volume is weakly correlated with the Bitcoin market price and the other measures, and does not contain any time-dependent information. Thus, it is also dropped. An overview of the remaining measures can be found in Fig.~\ref {fig:all_vs_all}.\relax }{figure.caption.4}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Scatterplot matrix of the remaining four measures selected from the original time series dataset in Fig.~\ref  {fig:blockchain.api} that appear to be useful for the prediction of tomorrow's Bitcoin market price. The line plots on the diagonal are the densities of the respective measures. The upper righthand part of the Figure reports Pearson's correlation coefficients - the same as in Fig.~\ref  {fig:correlation_matrix} - between the measures.\relax }}{6}{figure.caption.5}\protected@file@percent }
-\newlabel{fig:all_vs_all}{{4}{6}{Scatterplot matrix of the remaining four measures selected from the original time series dataset in Fig.~\ref {fig:blockchain.api} that appear to be useful for the prediction of tomorrow's Bitcoin market price. The line plots on the diagonal are the densities of the respective measures. The upper righthand part of the Figure reports Pearson's correlation coefficients - the same as in Fig.~\ref {fig:correlation_matrix} - between the measures.\relax }{figure.caption.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Transformation to Binary Classification Dataset}{7}{subsection.2.2}\protected@file@percent }
-\newlabel{subsec:bin_class_data}{{2.2}{7}{Transformation to Binary Classification Dataset}{subsection.2.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Autocorrelation of the Bitcoin market price. The autocorrelation drops below a value of $0.5$ after a lag of about $100$ days. This information is used in the construction of the binary classification dataset by applying the moving window method, see the example structure in Fig.~\ref  {fig:example}.\relax }}{7}{figure.caption.6}\protected@file@percent }
-\newlabel{fig:autocorrelation}{{5}{7}{Autocorrelation of the Bitcoin market price. The autocorrelation drops below a value of $0.5$ after a lag of about $100$ days. This information is used in the construction of the binary classification dataset by applying the moving window method, see the example structure in Fig.~\ref {fig:example}.\relax }{figure.caption.6}{}}
+\citation{Data}
+\abx@aux@cite{Data}
+\abx@aux@segm{0}{0}{Data}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Dataset}{5}{section.2}\protected@file@percent }
+\newlabel{sec:dataset}{{2}{5}{Dataset}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Bitcoin Time Series Data}{5}{subsection.2.1}\protected@file@percent }
+\newlabel{subsec:time_series_data}{{2.1}{5}{Bitcoin Time Series Data}{subsection.2.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Bitcoin day-by-day time series data obtained from the Blockchain.com API, see \cite {Data}. The time series of the Bitcoin market price and the other displayed measures are reported for the time period from \date {01 September 2011} to \date {15 June 2021}. This is a total of $3576$ days. The different measures are explained in the main text.\relax }}{6}{figure.caption.3}\protected@file@percent }
+\newlabel{fig:blockchain.api}{{2}{6}{Bitcoin day-by-day time series data obtained from the Blockchain.com API, see \cite {Data}. The time series of the Bitcoin market price and the other displayed measures are reported for the time period from \date {01 September 2011} to \date {15 June 2021}. This is a total of $3576$ days. The different measures are explained in the main text.\relax }{figure.caption.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Transformation to Binary Classification Dataset}{6}{subsection.2.2}\protected@file@percent }
+\newlabel{subsec:bin_class_data}{{2.2}{6}{Transformation to Binary Classification Dataset}{subsection.2.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Pearson's correlation matrix of the time series from Fig.~\ref  {fig:blockchain.api}. As the market cap, the difficulty, and the miner's revenue have a correlation coefficient of $0.8$ or higher, these measures are not expected to be useful for the prediction of tomorrow's Bitcoin market price. In contrast, the transaction volume is weakly correlated with the Bitcoin market price and the other measures, and does not contain any time-dependent information. Thus, it is also dropped. An overview of the remaining measures can be found in Fig.~\ref  {fig:all_vs_all}.\relax }}{7}{figure.caption.4}\protected@file@percent }
+\newlabel{fig:correlation_matrix}{{3}{7}{Pearson's correlation matrix of the time series from Fig.~\ref {fig:blockchain.api}. As the market cap, the difficulty, and the miner's revenue have a correlation coefficient of $0.8$ or higher, these measures are not expected to be useful for the prediction of tomorrow's Bitcoin market price. In contrast, the transaction volume is weakly correlated with the Bitcoin market price and the other measures, and does not contain any time-dependent information. Thus, it is also dropped. An overview of the remaining measures can be found in Fig.~\ref {fig:all_vs_all}.\relax }{figure.caption.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Scatterplot matrix of the remaining four measures selected from the original time series dataset in Fig.~\ref  {fig:blockchain.api} that appear to be useful for the prediction of tomorrow's Bitcoin market price. The line plots on the diagonal are the densities of the respective measures. The upper righthand part of the Figure reports Pearson's correlation coefficients - the same as in Fig.~\ref  {fig:correlation_matrix} - between the measures.\relax }}{7}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:all_vs_all}{{4}{7}{Scatterplot matrix of the remaining four measures selected from the original time series dataset in Fig.~\ref {fig:blockchain.api} that appear to be useful for the prediction of tomorrow's Bitcoin market price. The line plots on the diagonal are the densities of the respective measures. The upper righthand part of the Figure reports Pearson's correlation coefficients - the same as in Fig.~\ref {fig:correlation_matrix} - between the measures.\relax }{figure.caption.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Autocorrelation of the Bitcoin market price. The autocorrelation drops below a value of $0.5$ after a lag of about $100$ days. This information is used in the construction of the binary classification dataset by applying the moving window method, see the example structure in Fig.~\ref  {fig:example}.\relax }}{8}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:autocorrelation}{{5}{8}{Autocorrelation of the Bitcoin market price. The autocorrelation drops below a value of $0.5$ after a lag of about $100$ days. This information is used in the construction of the binary classification dataset by applying the moving window method, see the example structure in Fig.~\ref {fig:example}.\relax }{figure.caption.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Structure of the examples in the binary classification dataset obtained by applying the moving window approach on the four selected time series. There are $m-1$ dates for each selected time series that are treated as features. The label of each example is the direction of tomorrow's Bitcoin market price, and is used as the label. In the present work, based on the autocorrelation plot from Fig.~\ref  {fig:autocorrelation}, $m=100$ is used as the length of the moving window.\relax }}{9}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:example}{{6}{9}{Structure of the examples in the binary classification dataset obtained by applying the moving window approach on the four selected time series. There are $m-1$ dates for each selected time series that are treated as features. The label of each example is the direction of tomorrow's Bitcoin market price, and is used as the label. In the present work, based on the autocorrelation plot from Fig.~\ref {fig:autocorrelation}, $m=100$ is used as the length of the moving window.\relax }{figure.caption.7}{}}
+\newlabel{fig:sub1}{{7a}{9}{training examples\relax }{figure.caption.8}{}}
+\newlabel{sub@fig:sub1}{{a}{9}{training examples\relax }{figure.caption.8}{}}
+\newlabel{fig:sub2}{{7b}{9}{test examples\relax }{figure.caption.8}{}}
+\newlabel{sub@fig:sub2}{{b}{9}{test examples\relax }{figure.caption.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Split of the binary classification dataset into a training (\SI {80}{\percent }) and a test (\SI {20}{\percent }) part. Both sets are slightly unbalanced towards an increasing Bitcoin market price.\relax }}{9}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:test}{{7}{9}{Split of the binary classification dataset into a training (\SI {80}{\percent }) and a test (\SI {20}{\percent }) part. Both sets are slightly unbalanced towards an increasing Bitcoin market price.\relax }{figure.caption.8}{}}
 \citation{stat_2014}
 \abx@aux@cite{stat_2014}
 \abx@aux@segm{0}{0}{stat_2014}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Structure of the examples in the binary classification dataset obtained by applying the moving window approach on the four selected time series. There are $m-1$ dates for each selected time series that are treated as features. The label of each example is the direction of tomorrow's Bitcoin market price, and is used as the label. In the present work, based on the autocorrelation plot from Fig.~\ref  {fig:autocorrelation}, $m=100$ is used as the length of the moving window.\relax }}{8}{figure.caption.7}\protected@file@percent }
-\newlabel{fig:example}{{6}{8}{Structure of the examples in the binary classification dataset obtained by applying the moving window approach on the four selected time series. There are $m-1$ dates for each selected time series that are treated as features. The label of each example is the direction of tomorrow's Bitcoin market price, and is used as the label. In the present work, based on the autocorrelation plot from Fig.~\ref {fig:autocorrelation}, $m=100$ is used as the length of the moving window.\relax }{figure.caption.7}{}}
-\newlabel{fig:sub1}{{7a}{8}{training examples\relax }{figure.caption.8}{}}
-\newlabel{sub@fig:sub1}{{a}{8}{training examples\relax }{figure.caption.8}{}}
-\newlabel{fig:sub2}{{7b}{8}{test examples\relax }{figure.caption.8}{}}
-\newlabel{sub@fig:sub2}{{b}{8}{test examples\relax }{figure.caption.8}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Split of the binary classification dataset into a training (\SI {80}{\percent }) and a test (\SI {20}{\percent }) part. Both sets are slightly unbalanced towards an increasing Bitcoin market price.\relax }}{8}{figure.caption.8}\protected@file@percent }
-\newlabel{fig:test}{{7}{8}{Split of the binary classification dataset into a training (\SI {80}{\percent }) and a test (\SI {20}{\percent }) part. Both sets are slightly unbalanced towards an increasing Bitcoin market price.\relax }{figure.caption.8}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Theory}{8}{section.3}\protected@file@percent }
-\newlabel{sec:theory}{{3}{8}{Theory}{section.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Logistic Regression}{9}{subsection.3.1}\protected@file@percent }
-\newlabel{eq:log_reg}{{1}{9}{Logistic Regression}{equation.3.1}{}}
-\newlabel{eq:log_odds}{{2}{9}{Logistic Regression}{equation.3.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}K-Nearest Neighbors Algorithm}{9}{subsection.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Deep Neural Network}{9}{subsection.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Hyperparameter Optimization \& Performance Evaluation}{9}{subsection.3.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4}Implementation \& Software}{10}{section.4}\protected@file@percent }
-\newlabel{sec:implementation_software}{{4}{10}{Implementation \& Software}{section.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Results}{10}{section.5}\protected@file@percent }
-\newlabel{sec:results}{{5}{10}{Results}{section.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Majority Predictor}{10}{subsection.5.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Training and 10-fold CV accuracy of the majority predictor as a function of the length $m$ of the moving window.\relax }}{11}{figure.caption.9}\protected@file@percent }
-\newlabel{fig:major_acc_vs_m}{{8}{11}{Training and 10-fold CV accuracy of the majority predictor as a function of the length $m$ of the moving window.\relax }{figure.caption.9}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Confusion matrix of the majority predictor on the test set.\relax }}{11}{table.caption.10}\protected@file@percent }
-\newlabel{tab:major_conf_mat}{{1}{11}{Confusion matrix of the majority predictor on the test set.\relax }{table.caption.10}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Accuracy, sensitivity, and specificity of the majority predictor on the test set.\relax }}{11}{table.caption.11}\protected@file@percent }
-\newlabel{tab:major_results}{{2}{11}{Accuracy, sensitivity, and specificity of the majority predictor on the test set.\relax }{table.caption.11}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Logistic Regression}{11}{subsection.5.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Training and 10-fold CV accuracy for the logistic regression as a function of the length $m$ of the moving window. The vertical black line indicates the value of $m=4$ for which the 10-fold CV accuracy of the logistic regression fit is maximized.\relax }}{12}{figure.caption.12}\protected@file@percent }
-\newlabel{fig:log_acc_vs_m}{{9}{12}{Training and 10-fold CV accuracy for the logistic regression as a function of the length $m$ of the moving window. The vertical black line indicates the value of $m=4$ for which the 10-fold CV accuracy of the logistic regression fit is maximized.\relax }{figure.caption.12}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces ROC curve of the logistic regression fit. The dashed diagonal line is the ROC curve of a random classifier. For the logistic regression fit, the AUC is $12$.\relax }}{12}{figure.caption.13}\protected@file@percent }
-\newlabel{fig:log_roc}{{10}{12}{ROC curve of the logistic regression fit. The dashed diagonal line is the ROC curve of a random classifier. For the logistic regression fit, the AUC is $12$.\relax }{figure.caption.13}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Confusion matrix of the logistic regression fit on the test set.\relax }}{13}{table.caption.14}\protected@file@percent }
-\newlabel{tab:log_conf_mat}{{3}{13}{Confusion matrix of the logistic regression fit on the test set.\relax }{table.caption.14}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Accuracy, sensitivity, and specificity of the logistic regression fit on the test set.\relax }}{13}{table.caption.15}\protected@file@percent }
-\newlabel{tab:log_results}{{4}{13}{Accuracy, sensitivity, and specificity of the logistic regression fit on the test set.\relax }{table.caption.15}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Estimated coefficients of the logistic regression fit for a moving window length of $m=4$. For each coefficient, the standard deviation, the $z$ score, and the probability to obtain a $z$ score with an absolute value larger than the obtained one based on the $z$ statistic are given.\relax }}{13}{table.caption.16}\protected@file@percent }
-\newlabel{tab:log_coef}{{5}{13}{Estimated coefficients of the logistic regression fit for a moving window length of $m=4$. For each coefficient, the standard deviation, the $z$ score, and the probability to obtain a $z$ score with an absolute value larger than the obtained one based on the $z$ statistic are given.\relax }{table.caption.16}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Square-root of the VIF for all of the coefficients in the logistic regression from Tab.~\ref  {tab:log_coef}.\relax }}{13}{table.caption.17}\protected@file@percent }
-\newlabel{tab:log_vif}{{6}{13}{Square-root of the VIF for all of the coefficients in the logistic regression from Tab.~\ref {tab:log_coef}.\relax }{table.caption.17}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}K-Nearest Neighbors Algorithm}{13}{subsection.5.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Training and 10-fold CV accuracy for the K-nearest neighbors algorithm as a function of the length $m$ of the moving window. For each $m$, the number of nearest neighbors $K$ for which the 10-fold CV accuracy is the highest is reported. The optimal value of $K_{max}$ for each moving window length $m$ is reported in Fig.~\ref  The vertical black line indicates the value of $m=91$ for which the 10-fold CV accuracy of the K-nearest neighbors regression is maximized.\relax }}{14}{figure.caption.18}\protected@file@percent }
-\newlabel{fig:knn_acc_vs_m}{{11}{14}{Training and 10-fold CV accuracy for the K-nearest neighbors algorithm as a function of the length $m$ of the moving window. For each $m$, the number of nearest neighbors $K$ for which the 10-fold CV accuracy is the highest is reported. The optimal value of $K_{max}$ for each moving window length $m$ is reported in Fig.~\ref The vertical black line indicates the value of $m=91$ for which the 10-fold CV accuracy of the K-nearest neighbors regression is maximized.\relax }{figure.caption.18}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Training and 10-fold CV accuracy for the K-neareast neighbors algorithm as a functio of $K$ for the optimal moving window size $m=91$. The vertical black line indicates the value of $K_{max} = 29$ for which the 10-fold CV accuracy of the K-nearest neighbors algorithm is maximized.\relax }}{14}{figure.caption.19}\protected@file@percent }
-\newlabel{fig:knn_acc_vs_K}{{12}{14}{Training and 10-fold CV accuracy for the K-neareast neighbors algorithm as a functio of $K$ for the optimal moving window size $m=91$. The vertical black line indicates the value of $K_{max} = 29$ for which the 10-fold CV accuracy of the K-nearest neighbors algorithm is maximized.\relax }{figure.caption.19}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Deep Neural Network}{14}{subsection.5.4}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Number of nearest neighbors $K_{max}$ for which the 10-fold CV accuracy for each moving window length $m$ is maximized.\relax }}{15}{figure.caption.20}\protected@file@percent }
-\newlabel{fig:knn_K_max}{{13}{15}{Number of nearest neighbors $K_{max}$ for which the 10-fold CV accuracy for each moving window length $m$ is maximized.\relax }{figure.caption.20}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces ROC curve for the K-nearest neighbors algorithm. The dashed diagonal line is the ROC curve of a random classifier. For the K-neareast neighbors algorithm, the AUC is $12$.\relax }}{15}{figure.caption.21}\protected@file@percent }
-\newlabel{fig:knn_roc}{{14}{15}{ROC curve for the K-nearest neighbors algorithm. The dashed diagonal line is the ROC curve of a random classifier. For the K-neareast neighbors algorithm, the AUC is $12$.\relax }{figure.caption.21}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces confusion matrix of knn on test set\relax }}{15}{table.caption.22}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Accuracy, sensitivity, and specificity for the K-nearest neighbors algorithm on the test set.\relax }}{15}{table.caption.23}\protected@file@percent }
-\newlabel{tab:knn_results}{{8}{15}{Accuracy, sensitivity, and specificity for the K-nearest neighbors algorithm on the test set.\relax }{table.caption.23}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Theory}{10}{section.3}\protected@file@percent }
+\newlabel{sec:theory}{{3}{10}{Theory}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Logistic Regression}{10}{subsection.3.1}\protected@file@percent }
+\newlabel{eq:log_reg}{{1}{10}{Logistic Regression}{equation.3.1}{}}
+\newlabel{eq:log_odds}{{2}{10}{Logistic Regression}{equation.3.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}K-Nearest Neighbors Algorithm}{10}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Deep Neural Network}{10}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Hyperparameter Optimization \& Performance Evaluation}{11}{subsection.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Implementation \& Software}{12}{section.4}\protected@file@percent }
+\newlabel{sec:implementation_software}{{4}{12}{Implementation \& Software}{section.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Results}{13}{section.5}\protected@file@percent }
+\newlabel{sec:results}{{5}{13}{Results}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Majority Predictor}{13}{subsection.5.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Training and 10-fold CV accuracy of the majority predictor as a function of the moving window length $m$.\relax }}{13}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:major_acc_vs_m}{{8}{13}{Training and 10-fold CV accuracy of the majority predictor as a function of the moving window length $m$.\relax }{figure.caption.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Logistic Regression}{13}{subsection.5.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Confusion matrix of the majority predictor on the test set.\relax }}{14}{table.caption.10}\protected@file@percent }
+\newlabel{tab:major_conf_mat}{{1}{14}{Confusion matrix of the majority predictor on the test set.\relax }{table.caption.10}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Accuracy, sensitivity, and specificity of the majority predictor on the test set.\relax }}{14}{table.caption.11}\protected@file@percent }
+\newlabel{tab:major_results}{{2}{14}{Accuracy, sensitivity, and specificity of the majority predictor on the test set.\relax }{table.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Training and 10-fold CV accuracy of the logistic regression fit as a function of the moving window length $m$ for a prediction threshold of \SI {50}{\percent }. The vertical black line indicates the value of $m=4$ for which the 10-fold CV accuracy of the logistic regression fit is maximized.\relax }}{14}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:log_acc_vs_m}{{9}{14}{Training and 10-fold CV accuracy of the logistic regression fit as a function of the moving window length $m$ for a prediction threshold of \SI {50}{\percent }. The vertical black line indicates the value of $m=4$ for which the 10-fold CV accuracy of the logistic regression fit is maximized.\relax }{figure.caption.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces ROC curve of the logistic regression fit with a moving window length of $m=4$. The dashed diagonal line is the ROC curve of a random classifier that has an AUC of $0.5$. For the logistic regression fit, the AUC is $0.5486$.\relax }}{15}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:log_roc}{{10}{15}{ROC curve of the logistic regression fit with a moving window length of $m=4$. The dashed diagonal line is the ROC curve of a random classifier that has an AUC of $0.5$. For the logistic regression fit, the AUC is $0.5486$.\relax }{figure.caption.13}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Confusion matrix of the logistic regression fit on the test set for a moving window length of $m=4$, and a prediction threshold of \SI {50}{\percent }.\relax }}{15}{table.caption.14}\protected@file@percent }
+\newlabel{tab:log_conf_mat}{{3}{15}{Confusion matrix of the logistic regression fit on the test set for a moving window length of $m=4$, and a prediction threshold of \SI {50}{\percent }.\relax }{table.caption.14}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Accuracy, sensitivity, and specificity of the logistic regression fit on the test set for a moving window length of $m=4$, and a prediction threshold of \SI {50}{\percent }.\relax }}{15}{table.caption.15}\protected@file@percent }
+\newlabel{tab:log_results}{{4}{15}{Accuracy, sensitivity, and specificity of the logistic regression fit on the test set for a moving window length of $m=4$, and a prediction threshold of \SI {50}{\percent }.\relax }{table.caption.15}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Estimated coefficients of the logistic regression fit for a moving window length of $m=4$, and a prediction threshold of \SI {50}{\percent }. For each coefficient, the standard deviation, the $z$ score, and the probability to obtain a $z$ score with an absolute value larger than the obtained one based on the $z$ statistic are given.\relax }}{16}{table.caption.16}\protected@file@percent }
+\newlabel{tab:log_coef}{{5}{16}{Estimated coefficients of the logistic regression fit for a moving window length of $m=4$, and a prediction threshold of \SI {50}{\percent }. For each coefficient, the standard deviation, the $z$ score, and the probability to obtain a $z$ score with an absolute value larger than the obtained one based on the $z$ statistic are given.\relax }{table.caption.16}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Square-root of the VIF for all of the estimated coefficients in the logistic regression fit from Tab.~\ref  {tab:log_coef}. Typically, a value of about $2$ is taken as a threshold for a negligible influence of the correlation between the features.\relax }}{16}{table.caption.17}\protected@file@percent }
+\newlabel{tab:log_vif}{{6}{16}{Square-root of the VIF for all of the estimated coefficients in the logistic regression fit from Tab.~\ref {tab:log_coef}. Typically, a value of about $2$ is taken as a threshold for a negligible influence of the correlation between the features.\relax }{table.caption.17}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}K-Nearest Neighbors Algorithm}{17}{subsection.5.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Number of nearest neighbors $K_{max}$ for which the 10-fold CV accuracy using a prediction threshold of \SI {50}{\percent } for each moving window length $m$ is maximized.\relax }}{17}{figure.caption.18}\protected@file@percent }
+\newlabel{fig:knn_K_max}{{11}{17}{Number of nearest neighbors $K_{max}$ for which the 10-fold CV accuracy using a prediction threshold of \SI {50}{\percent } for each moving window length $m$ is maximized.\relax }{figure.caption.18}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Confusion matrix of the K-nearest neighbors algorithm on the test set for a moving window length of $m=91$, $K_{max}=29$, and a prediction threshold of \SI {50}{\percent }.\relax }}{17}{table.caption.22}\protected@file@percent }
+\newlabel{tab:knn_conf_mat}{{7}{17}{Confusion matrix of the K-nearest neighbors algorithm on the test set for a moving window length of $m=91$, $K_{max}=29$, and a prediction threshold of \SI {50}{\percent }.\relax }{table.caption.22}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Training and 10-fold CV accuracy for the K-nearest neighbors algorithm as a function of the moving window length $m$ for a prediction threshold of \SI {50}{\percent }. For each $m$, the accuracies for the optimal number of nearest neighbors $K_{max}$ from Fig.~\ref  {fig:knn_K_max} is reported. The vertical black line indicates the value of $m=91$ for which the 10-fold CV accuracy of the K-nearest neighbors regression using $K_{max}=29$ is maximized.\relax }}{18}{figure.caption.19}\protected@file@percent }
+\newlabel{fig:knn_acc_vs_m}{{12}{18}{Training and 10-fold CV accuracy for the K-nearest neighbors algorithm as a function of the moving window length $m$ for a prediction threshold of \SI {50}{\percent }. For each $m$, the accuracies for the optimal number of nearest neighbors $K_{max}$ from Fig.~\ref {fig:knn_K_max} is reported. The vertical black line indicates the value of $m=91$ for which the 10-fold CV accuracy of the K-nearest neighbors regression using $K_{max}=29$ is maximized.\relax }{figure.caption.19}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Training and 10-fold CV accuracy for the K-neareast neighbors algorithm as a function of $K$ for the optimal moving window size $m=91$ using a prediction threshold of \SI {50}{\percent }. The vertical black line indicates the value of $K_{max} = 29$ for which the 10-fold CV accuracy of the K-nearest neighbors algorithm is maximized.\relax }}{18}{figure.caption.20}\protected@file@percent }
+\newlabel{fig:knn_acc_vs_K}{{13}{18}{Training and 10-fold CV accuracy for the K-neareast neighbors algorithm as a function of $K$ for the optimal moving window size $m=91$ using a prediction threshold of \SI {50}{\percent }. The vertical black line indicates the value of $K_{max} = 29$ for which the 10-fold CV accuracy of the K-nearest neighbors algorithm is maximized.\relax }{figure.caption.20}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Accuracy, sensitivity, and specificity of the K-nearest neighbors algorithm on the test set for a moving window length of $m=4$, $K_{max}=29$, and a prediction threshold of \SI {50}{\percent }.\relax }}{18}{table.caption.23}\protected@file@percent }
+\newlabel{tab:knn_results}{{8}{18}{Accuracy, sensitivity, and specificity of the K-nearest neighbors algorithm on the test set for a moving window length of $m=4$, $K_{max}=29$, and a prediction threshold of \SI {50}{\percent }.\relax }{table.caption.23}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces  ROC curve of the K-nearest neighbors algorithm with a moving window length of $m=91$, and $K_{max} = 29$. The dashed diagonal line is the ROC curve of a random classifier that has an AUC of $0.5$. For the K-nearest neighbors algorithm, the AUC is $0.5038$.\relax }}{19}{figure.caption.21}\protected@file@percent }
+\newlabel{fig:knn_roc}{{14}{19}{ROC curve of the K-nearest neighbors algorithm with a moving window length of $m=91$, and $K_{max} = 29$. The dashed diagonal line is the ROC curve of a random classifier that has an AUC of $0.5$. For the K-nearest neighbors algorithm, the AUC is $0.5038$.\relax }{figure.caption.21}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Deep Neural Network}{19}{subsection.5.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Number of epochs $N_{epoch,max}$ for which the validation accuracy using a prediction threshold of \SI {50}{\percent } for each moving window length $m$ is maximized.\relax }}{20}{figure.caption.24}\protected@file@percent }
+\newlabel{fig:dnn_N_max}{{15}{20}{Number of epochs $N_{epoch,max}$ for which the validation accuracy using a prediction threshold of \SI {50}{\percent } for each moving window length $m$ is maximized.\relax }{figure.caption.24}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Training and validation accuracy of the deep neural network as a function of $N_{epoch}$ for a moving window length of $m=57$ using a prediction threshold of \SI {50}{\percent }.\relax }}{20}{figure.caption.25}\protected@file@percent }
+\newlabel{fig:dnn_acc_vs_N}{{16}{20}{Training and validation accuracy of the deep neural network as a function of $N_{epoch}$ for a moving window length of $m=57$ using a prediction threshold of \SI {50}{\percent }.\relax }{figure.caption.25}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Training and validation accuracy of the deep neural network as a function of the moving window length $m$ for a prediction threshold of \SI {50}{\percent }. The accuracies for the optimal epoch numbers in Fig.~\ref  {fig:dnn_N_max} are reported.\relax }}{21}{figure.caption.26}\protected@file@percent }
+\newlabel{fig:dnn_acc_vs_m}{{17}{21}{Training and validation accuracy of the deep neural network as a function of the moving window length $m$ for a prediction threshold of \SI {50}{\percent }. The accuracies for the optimal epoch numbers in Fig.~\ref {fig:dnn_N_max} are reported.\relax }{figure.caption.26}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Confusion matrix of the deep neural network on the test set for a moving window length of $m=57$, $N_{epoch, max}=3$, and a prediction threshold of \SI {50}{\percent }. The deep neural network reproduces the confusion matrix of the majority predictor.\relax }}{21}{table.caption.27}\protected@file@percent }
+\newlabel{tab:dnn_conf_mat}{{9}{21}{Confusion matrix of the deep neural network on the test set for a moving window length of $m=57$, $N_{epoch, max}=3$, and a prediction threshold of \SI {50}{\percent }. The deep neural network reproduces the confusion matrix of the majority predictor.\relax }{table.caption.27}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Accuracy, sensitivity, and specificity of the deep neural network on the test set for a moving window length of $m=53$, $N_{epoch, max}=3$, and a prediction threshold of \SI {50}{\percent }. The deep neural network reproduces the values of the majority predictor.\relax }}{21}{table.caption.28}\protected@file@percent }
+\newlabel{tab:dnn_results}{{10}{21}{Accuracy, sensitivity, and specificity of the deep neural network on the test set for a moving window length of $m=53$, $N_{epoch, max}=3$, and a prediction threshold of \SI {50}{\percent }. The deep neural network reproduces the values of the majority predictor.\relax }{table.caption.28}{}}
+\citation{prediction_2019}
+\abx@aux@cite{prediction_2019}
+\abx@aux@segm{0}{0}{prediction_2019}
+\citation{prediction2_2019}
+\abx@aux@cite{prediction2_2019}
+\abx@aux@segm{0}{0}{prediction2_2019}
 \citation{SocialMedia2015}
 \abx@aux@cite{SocialMedia2015}
 \abx@aux@segm{0}{0}{SocialMedia2015}
 \citation{Twitter2019}
 \abx@aux@cite{Twitter2019}
 \abx@aux@segm{0}{0}{Twitter2019}
-\citation{Classification2015}
-\abx@aux@cite{Classification2015}
-\abx@aux@segm{0}{0}{Classification2015}
 \citation{Musk2021}
 \abx@aux@cite{Musk2021}
 \abx@aux@segm{0}{0}{Musk2021}
@@ -138,18 +152,12 @@
 \citation{Binance2021}
 \abx@aux@cite{Binance2021}
 \abx@aux@segm{0}{0}{Binance2021}
-\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces accuracy dnn\relax }}{16}{figure.caption.24}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces accuracy N max dnn\relax }}{16}{figure.caption.25}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces confusion matrix of dnn on test set\relax }}{16}{table.caption.27}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Accuracy, sensitivity, and specificity of the deep neural network on the test set.\relax }}{16}{table.caption.28}\protected@file@percent }
-\newlabel{tab:dnn_results}{{10}{16}{Accuracy, sensitivity, and specificity of the deep neural network on the test set.\relax }{table.caption.28}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{16}{section.6}\protected@file@percent }
-\newlabel{sec:discussion}{{6}{16}{Discussion}{section.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces N max dnn\relax }}{17}{figure.caption.26}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces Comparison of the accuracy, sensitivity, and specificity of the majority predictor and the different machine learning algorithms on the test set.\relax }}{17}{table.caption.29}\protected@file@percent }
-\newlabel{tab:comparison}{{11}{17}{Comparison of the accuracy, sensitivity, and specificity of the majority predictor and the different machine learning algorithms on the test set.\relax }{table.caption.29}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion \& Outlook}{17}{section.7}\protected@file@percent }
-\newlabel{sec:conclusion_outlook}{{7}{17}{Conclusion \& Outlook}{section.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{22}{section.6}\protected@file@percent }
+\newlabel{sec:discussion}{{6}{22}{Discussion}{section.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces Comparison of the prediction accuracy, the sensitivity, and the specificity of the majority predictor and the different machine learning algorithms on the test set. The reported values refer to the optimal hyperparameters that are obtained in Section~\ref  {sec:results}.\relax }}{22}{table.caption.29}\protected@file@percent }
+\newlabel{tab:comparison}{{11}{22}{Comparison of the prediction accuracy, the sensitivity, and the specificity of the majority predictor and the different machine learning algorithms on the test set. The reported values refer to the optimal hyperparameters that are obtained in Section~\ref {sec:results}.\relax }{table.caption.29}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{23}{section.7}\protected@file@percent }
+\newlabel{sec:conclusion_outlook}{{7}{23}{Conclusion}{section.7}{}}
 \abx@aux@refcontextdefaultsdone
 \abx@aux@defaultrefcontext{0}{Bitcoin2009}{none/global//global/global}
 \abx@aux@defaultrefcontext{0}{MarketCapCompany2021}{none/global//global/global}
@@ -157,9 +165,10 @@
 \abx@aux@defaultrefcontext{0}{bitcoin_book_2018}{none/global//global/global}
 \abx@aux@defaultrefcontext{0}{Data}{none/global//global/global}
 \abx@aux@defaultrefcontext{0}{stat_2014}{none/global//global/global}
+\abx@aux@defaultrefcontext{0}{prediction_2019}{none/global//global/global}
+\abx@aux@defaultrefcontext{0}{prediction2_2019}{none/global//global/global}
 \abx@aux@defaultrefcontext{0}{SocialMedia2015}{none/global//global/global}
 \abx@aux@defaultrefcontext{0}{Twitter2019}{none/global//global/global}
-\abx@aux@defaultrefcontext{0}{Classification2015}{none/global//global/global}
 \abx@aux@defaultrefcontext{0}{Musk2021}{none/global//global/global}
 \abx@aux@defaultrefcontext{0}{China2021}{none/global//global/global}
 \abx@aux@defaultrefcontext{0}{Binance2021}{none/global//global/global}
@@ -169,10 +178,11 @@
 \abx@aux@defaultlabelprefix{0}{bitcoin_book_2018}{}
 \abx@aux@defaultlabelprefix{0}{Data}{}
 \abx@aux@defaultlabelprefix{0}{stat_2014}{}
+\abx@aux@defaultlabelprefix{0}{prediction_2019}{}
+\abx@aux@defaultlabelprefix{0}{prediction2_2019}{}
 \abx@aux@defaultlabelprefix{0}{SocialMedia2015}{}
 \abx@aux@defaultlabelprefix{0}{Twitter2019}{}
-\abx@aux@defaultlabelprefix{0}{Classification2015}{}
 \abx@aux@defaultlabelprefix{0}{Musk2021}{}
 \abx@aux@defaultlabelprefix{0}{China2021}{}
 \abx@aux@defaultlabelprefix{0}{Binance2021}{}
-\@writefile{toc}{\contentsline {section}{References}{18}{section.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{References}{24}{section.7}\protected@file@percent }

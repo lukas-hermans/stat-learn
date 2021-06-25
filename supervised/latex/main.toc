@@ -1,20 +1,20 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {USenglish}{}
 \contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
-\contentsline {section}{\numberline {2}Dataset}{4}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Bitcoin Time Series Data}{4}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Transformation to Binary Classification Dataset}{7}{subsection.2.2}%
-\contentsline {section}{\numberline {3}Theory}{8}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Logistic Regression}{9}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}K-Nearest Neighbors Algorithm}{9}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Deep Neural Network}{9}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Hyperparameter Optimization \& Performance Evaluation}{9}{subsection.3.4}%
-\contentsline {section}{\numberline {4}Implementation \& Software}{10}{section.4}%
-\contentsline {section}{\numberline {5}Results}{10}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Majority Predictor}{10}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Logistic Regression}{11}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}K-Nearest Neighbors Algorithm}{13}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Deep Neural Network}{14}{subsection.5.4}%
-\contentsline {section}{\numberline {6}Discussion}{16}{section.6}%
-\contentsline {section}{\numberline {7}Conclusion \& Outlook}{17}{section.7}%
-\contentsline {section}{References}{18}{section.7}%
+\contentsline {section}{\numberline {2}Dataset}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Bitcoin Time Series Data}{5}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Transformation to Binary Classification Dataset}{6}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Theory}{10}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Logistic Regression}{10}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}K-Nearest Neighbors Algorithm}{10}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Deep Neural Network}{10}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Hyperparameter Optimization \& Performance Evaluation}{11}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Implementation \& Software}{12}{section.4}%
+\contentsline {section}{\numberline {5}Results}{13}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Majority Predictor}{13}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Logistic Regression}{13}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}K-Nearest Neighbors Algorithm}{17}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Deep Neural Network}{19}{subsection.5.4}%
+\contentsline {section}{\numberline {6}Discussion}{22}{section.6}%
+\contentsline {section}{\numberline {7}Conclusion}{23}{section.7}%
+\contentsline {section}{References}{24}{section.7}%
