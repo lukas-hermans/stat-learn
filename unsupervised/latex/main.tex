@@ -1,0 +1,44 @@
+\input{preamble.tex}
+
+\begin{document}
+	
+	\fontdimen2\font=0.7ex% inter word space
+
+	\input{titlepage.tex}
+	\thispagestyle{empty}
+	\tableofcontents
+	\thispagestyle{empty}
+	
+	\pagestyle{fancy}
+	\fancyhf{}
+	\rhead{Lukas Hermans}
+	\lhead{Elon Musk: An Exemplary Twitter User Analysis}
+	\cfoot{\thepage}
+	
+	\newpage	
+	\section{Introduction}
+	\input{introduction.tex}
+	
+	\section{Dataset}\label{sec:dataset}
+	\input{dataset.tex}
+	
+	\section{Theory}\label{sec:theory}
+	\input{theory.tex}
+	
+	\section{Implementation \& Software}					\label{sec:implementation_software}
+	\input{implementation_software.tex}
+	
+	\section{Results}\label{sec:results}
+	\input{results.tex}
+	
+	\section{Discussion}\label{sec:discussion}
+	\input{discussion.tex}
+	
+	\section{Conclusion}\label{sec:conclusion_outlook}
+	\input{conclusion_outlook.tex}
+
+	\newpage
+	\addcontentsline{toc}{section}{References}
+	\printbibliography
+	
+\end{document}
