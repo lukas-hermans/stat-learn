@@ -1,8 +1,17 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.2}{Dataset}{}% 2
-\BOOKMARK [1][-]{section.3}{Theory}{}% 3
-\BOOKMARK [1][-]{section.4}{Implementation \046 Software}{}% 4
-\BOOKMARK [1][-]{section.5}{Results}{}% 5
-\BOOKMARK [1][-]{section.6}{Discussion}{}% 6
-\BOOKMARK [1][-]{section.7}{Conclusion}{}% 7
-\BOOKMARK [1][-]{section.7}{References}{}% 8
+\BOOKMARK [1][-]{section.2}{Dataset \046 First Insights}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Twitter Activity}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Interaction with Other Users \046 Websites}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Tweet Preprocessing \046 Word Usage}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Theory}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{Document-Term Matrix \046 Term-Document Matrix}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.2}{K-Means Clustering}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.3}{Hierarchical Clustering}{section.3}% 9
+\BOOKMARK [1][-]{section.4}{Implementation \046 Software}{}% 10
+\BOOKMARK [1][-]{section.5}{Results}{}% 11
+\BOOKMARK [2][-]{subsection.5.1}{K-Means Clustering}{section.5}% 12
+\BOOKMARK [2][-]{subsection.5.2}{Hierarchical Clustering}{section.5}% 13
+\BOOKMARK [1][-]{section.6}{Discussion}{}% 14
+\BOOKMARK [1][-]{section.7}{Conclusion}{}% 15
+\BOOKMARK [1][-]{section.7}{References}{}% 16
+\BOOKMARK [1][-]{section*.16}{Appendix}{}% 17

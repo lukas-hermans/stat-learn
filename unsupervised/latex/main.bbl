@@ -118,10 +118,10 @@
     \field{year}{2018}
   \endentry
 
-  \entry{musk}{online}{}
+  \entry{twitter}{online}{}
     \name{author}{1}{}{%
       {{hash=T}{%
-         family={Tesla},
+         family={Twitter},
          familyi={T\bibinitperiod},
       }}%
     }
@@ -129,12 +129,12 @@
     \strng{fullhash}{T1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{title}{Elon Musk}
+    \field{title}{Our Company}
     \verb{url}
-    \verb https://www.tesla.com/elon-musk
+    \verb https://about.twitter.com/en/who-we-are/our-company
     \endverb
     \field{year}{2021}
-    \field{urlday}{25}
+    \field{urlday}{28}
     \field{urlmonth}{06}
     \field{urlyear}{2021}
   \endentry
@@ -194,6 +194,65 @@
     \field{urlday}{25}
     \field{urlmonth}{06}
     \field{urlyear}{2021}
+  \endentry
+
+  \entry{twitter_api}{online}{}
+    \name{author}{1}{}{%
+      {{hash=T}{%
+         family={Twitter},
+         familyi={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{T1}
+    \strng{fullhash}{T1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Twitter API}
+    \verb{url}
+    \verb https://developer.twitter.com/en/docs/twitter-api
+    \endverb
+    \field{year}{2021}
+    \field{urlday}{28}
+    \field{urlmonth}{06}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{stat_2013}{book}{}
+    \name{author}{4}{}{%
+      {{hash=JG}{%
+         family={James},
+         familyi={J\bibinitperiod},
+         given={Gareth},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=WD}{%
+         family={Witten},
+         familyi={W\bibinitperiod},
+         given={Daniela},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=HT}{%
+         family={Hastie},
+         familyi={H\bibinitperiod},
+         given={Trevor},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=TR}{%
+         family={Tibshirani},
+         familyi={T\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JG+1}
+    \strng{fullhash}{JGWDHTTR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{9781461471370}
+    \field{title}{An Introduction to Statistical Learning: With Applications in
+  R}
+    \field{month}{08}
+    \field{year}{2013}
   \endentry
 \enddatalist
 \endinput

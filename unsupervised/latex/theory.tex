@@ -1,0 +1,30 @@
+The application of unsupervised clustering techniques requires that the preprocessed Tweets from the last Section are transformed into a document-term matrix, and a term-document matrix. The transformation is explained in Subsection~\ref{subsec:matrix}. Based on these matrices, the K-means clustering and the hierarchical clustering approach are described in Subsection~\ref{subsec:k_means} and Subsection~\ref{subsec:h_clust} \cite{stat_2013}.
+
+\subsection{Document-Term Matrix \& Term-Document Matrix}\label{subsec:matrix}
+The preprocessed Tweets are essentially a list of word sequences. The list has the length of the total number of Tweets, in the present case $11717$. This Tweet list has to be translated into a mathematical expression. In the present work, the document-term matrix and the term-document matrix are used. \\
+
+The rows of the \textit{document-term matrix} $X$ are the (preprocessed) Tweets, while the columns represent the words in each Tweet. Thus, the entry $x_{ij} = (X)_{ij}$ of the document-term matrix is $1$ if the Tweet $i$ contains the word $j$ once. If a word occurs twice in a Tweet, the entry is set to $2$, and so on. From this point of view, the Tweets are the observations, and the words are the features.\\
+
+After the preprocessing, there are still $11324$ different words. As each Tweet contains only a small subset of these words, the document-term matrix has many entries $0$. In mathematical terms, the document-term matrix has a high sparsity. In order to reduce the sparsity, and to keep the memory footprint reasonable, a reduced document-term matrix is obtained by keeping only words that occur at least in \SI{0.5}{\percent} of all Tweets - a negligible loss of information with respect to the original matrix for clustering purposes. The reduced document-term matrix reports only the occurence of the remaining $140$ words, and has the dimension $11717 \times 140$.\\
+
+The \textit{term-document matrix} - as the name may suggest - is simply the transposed of the document-term matrix, denoted by $X^T$. In the present case, $X^T$ (in its reduced form) has the dimension $140 \times 11717$. The term-document matrix encodes the words as observations, and the Tweets as features.	\\
+
+In the remaining part of the present work, whenever the document-term matrix or the term-document martix is mentioned, the reduced forms are meant.
+
+\subsection{K-Means Clustering}\label{subsec:k_means}
+In the present work, the K-means clustering is applied on the document-term matrix, i.e. Tweets are clustered based on the occurence of words. The scope of K-means clustering is to cluster the Tweets into $K$ categories. Each Tweet is contained in exactly one cluster. The hyperparameter $K$ has to be specified prior to the application of K-means clustering. The idea is to minimize the so-called total within-cluster variation
+\begin{align*}
+	G(C1,\dots,C_K) =  \sum_{k=1}^{K} W(C_k),
+\end{align*}
+where $C_1,...,C_K$ are the $K$ clusters. The within-cluster variation of cluster $C_k$ is defined as
+\begin{align*}
+	W(C_k) = \frac{1}{|C_k|} \sum_{i, i' \in C_k} \sum_{j=1}^p (x_{ij} - x_{i'j})^2,
+\end{align*}
+where $x_{ij}$ and $x_{i'j}$ are the entries of the document-term matrix $X$, and $p=140$ the number of words. In mathematical terms, K-means clustering seeks to compute
+\begin{align*}
+	\argmin_{C1,\dots,C_K} \left\{G(C1,\dots,C_K) \right\}.
+\end{align*}
+An efficient algorithm to find a local optimum of this minimization problem starts with a random allocation of the Tweets to $K$ clusters. Then, the clusters are improved iteratively until a sufficient convergence is obtained. It can be shown that each iteration of the algorithm always leads to a smaller within-cluster variation $G$.
+
+\subsection{Hierarchical Clustering}\label{subsec:h_clust}
+In contrast to K-means clustering, the hierarchical clustering makes use of the term-document matrix. This means that words are clustered based on their occurence in Tweets. Hierarchical clustering is an agglomorative, i.e. bottom-up, approach where every word is initially considered as a cluster. So, at the beginning, there are $140$ clusters. Then, the two words with the lowest dissimilarity (based on some distance measure) between them are fused to a larger cluster, and there are $139$ remaining clusters. This process is repeated until there is only $1$ remaining cluster. In doing so, it is necessary to define a generalized dissimilarity measure that is not only applicable between words but also between clusters of words. This dissimilarity measure is called \textit{linkage}.
