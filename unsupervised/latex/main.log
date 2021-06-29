@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.21)  28 JUN 2021 23:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.21)  29 JUN 2021 11:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1170,7 +1170,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--2
  []
 
 ) (./results.tex [8]
-<./images/G_vs_K.pdf, id=271, 361.35pt x 216.81pt>
+<./images/G_vs_K.pdf, id=272, 361.35pt x 216.81pt>
 File: ./images/G_vs_K.pdf Graphic file (type pdf)
 <use ./images/G_vs_K.pdf>
 Package pdftex.def Info: ./images/G_vs_K.pdf  used on input line 7.
@@ -1181,7 +1181,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
  []
 
 [9 <./images/G_vs_K.pdf>]
-<./images/K_cluster.pdf, id=294, 402.50375pt x 578.16pt>
+<./images/K_cluster.pdf, id=295, 402.50375pt x 578.16pt>
 File: ./images/K_cluster.pdf Graphic file (type pdf)
 <use ./images/K_cluster.pdf>
 Package pdftex.def Info: ./images/K_cluster.pdf  used on input line 37.
@@ -1192,26 +1192,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--45
  []
 
 [10 <./images/K_cluster.pdf>]
-<./images/hclust_dendogram.pdf, id=316, 1806.75pt x 722.7pt>
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
+
+ []
+
+<./images/hclust_dendogram.pdf, id=318, 1806.75pt x 722.7pt>
 File: ./images/hclust_dendogram.pdf Graphic file (type pdf)
 <use ./images/hclust_dendogram.pdf>
-Package pdftex.def Info: ./images/hclust_dendogram.pdf  used on input line 50.
+Package pdftex.def Info: ./images/hclust_dendogram.pdf  used on input line 60.
 (pdftex.def)             Requested size: 700.50687pt x 280.20876pt.
-<./images/hclust_wordclouds.pdf, id=319, 1806.75pt x 722.7pt>
+<./images/hclust_wordclouds.pdf, id=321, 1806.75pt x 722.7pt>
 File: ./images/hclust_wordclouds.pdf Graphic file (type pdf)
 <use ./images/hclust_wordclouds.pdf>
-Package pdftex.def Info: ./images/hclust_wordclouds.pdf  used on input line 57.
+Package pdftex.def Info: ./images/hclust_wordclouds.pdf  used on input line 67.
 
 (pdftex.def)             Requested size: 700.50687pt x 280.20876pt.
-) (./discussion.tex) (./conclusion.tex) [11]
-[12 <./images/hclust_dendogram.pdf>] [13 <./images/hclust_wordclouds.pdf>]
-[14] (./appendix.tex
-<./images/stopwords_en.png, id=390, 1029.8475pt x 292.09125pt>
+) [11] [12 <./images/hclust_dendogram.pdf>] [13 <./images/hclust_wordclouds.pdf
+>] (./discussion.tex
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+
+ []
+
+) (./conclusion.tex) [14] [15] (./appendix.tex
+<./images/stopwords_en.png, id=399, 1029.8475pt x 292.09125pt>
 File: ./images/stopwords_en.png Graphic file (type png)
 <use ./images/stopwords_en.png>
 Package pdftex.def Info: ./images/stopwords_en.png  used on input line 4.
 (pdftex.def)             Requested size: 452.9679pt x 128.47151pt.
-<./images/stopwords_smart.png, id=391, 751.80875pt x 833.1125pt>
+<./images/stopwords_smart.png, id=400, 751.80875pt x 833.1125pt>
 File: ./images/stopwords_smart.png Graphic file (type png)
 <use ./images/stopwords_smart.png>
 Package pdftex.def Info: ./images/stopwords_smart.png  used on input line 12.
@@ -1221,30 +1229,30 @@ Package pdftex.def Info: ./images/stopwords_smart.png  used on input line 12.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 49.
- [15 <./images/stopwords_en.png>] [16 <./images/stopwords_smart.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 50.
+ [16 <./images/stopwords_en.png>] [17 <./images/stopwords_smart.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 50.
 
 (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 49.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 50.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 50.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 56FDA4F10C64D16B3279D2CE038C1F70;1056.
+(rerunfilecheck)             Checksum: FF1F215474DCB38A50508466EB4C5114;1056.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20607 strings out of 483065
- 381272 string characters out of 5963550
- 961258 words of memory out of 5000000
- 35153 multiletter control sequences out of 15000+600000
+ 20610 strings out of 483065
+ 381305 string characters out of 5963550
+ 961609 words of memory out of 5000000
+ 35154 multiletter control sequences out of 15000+600000
  620370 words of font info for 89 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 51i,12n,52p,1268b,1690s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 51i,12n,52p,1266b,1690s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
-hare/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
+ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share
+/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
 -mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/f
 onts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.
 pfb></usr/share/texmf/fonts/type1/public/lm/lmbx9.pfb></usr/share/texmf/fonts/t
@@ -1253,15 +1261,16 @@ ype1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb><
 /public/lm/lmmi5.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/sh
 are/texmf/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/public/
 lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texm
-f/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/ty
-pe1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></u
-sr/share/texmf/fonts/type1/public/lm/lmsy5.pfb></usr/share/texmf/fonts/type1/pu
-blic/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (16 pages, 1370530 bytes).
+f/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr5.
+pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr
+/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/pub
+lic/lm/lmsy5.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmtt10.pfb>
+Output written on main.pdf (17 pages, 1390820 bytes).
 PDF statistics:
- 490 PDF objects out of 1000 (max. 8388607)
- 390 compressed objects within 4 object streams
- 58 named destinations out of 1000 (max. 500000)
+ 502 PDF objects out of 1000 (max. 8388607)
+ 400 compressed objects within 4 object streams
+ 60 named destinations out of 1000 (max. 500000)
  207 words of extra memory for PDF output out of 10000 (max. 10000000)
 

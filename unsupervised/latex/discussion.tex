@@ -1,0 +1,41 @@
+In the present work, information on Elon Musk's personality, interests, and career are obtained from an initial exploratory data analysis, followed by an application of the unsupervised machine learning techniques K-means clustering and hierarchical clustering. All these information lead to a detailed panorama about the person Elon Musk. Tab.~\ref{tab:musk} contains the profile of Elon Musk that is the combination of the results from the analyses in the present work. The obtained profile could for example be used to show Elon Musk personlized advertisements based on his interests.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{c|c}
+name & Elon Musk \\
+\hline
+\hline
+Twitter followers & $57.5$ million\\
+\hline
+\# Tweets & $11717$ \\
+\hline
+replies & \SI{64.27}{\percent}\\
+\hline
+acitivity & all over the day, less from $2$ AM to $7$ AM\\
+\hline
+\hline
+tesla & electric car company, autonomeous driving\\
+\hline
+spacex & rockets, engine called \enquote{raptor}, starship, falcon, Mars, Moon, Earth\\
+\hline
+energy & solar power, batteries\\
+\hline
+tunnels & company, boring tunnels\\
+\hline
+\hline
+personality & euphoria about upcoming software updates and new models\\
+\hline
+information & up to date on economic-related topics
+\end{tabular}
+\caption{Summary of the results from the intitial exploratory data analysis, the K-means clustering, and the hierarchical clustering. The combination of the different approaches lead to a detailed profile of the person Elon Musk. In practice, this profile could for example be used to show Elon Musk personalized advertisements.}
+\label{tab:musk}
+\end{table}
+
+The remaining part of this Section regards the question of how accurate this profile of Elon Musk is. First of all, his main interests in the automobile manufacturer Tesla, and the space company SpaceX are obvious given that he is the founder and CEO of these companies. The clustering reveal even that the rocket engines of SpaceX are called \enquote{Raptor}, but do not show that \enquote{Starship} and \enquote{Falcon} are the names of rockets. It is also true that Tesla is an electric car company that produces cars also with an autopilot. As new models of Tesla cars, and updates of the autopilot are developed frequently, it makes sense that he shows euphoria about these aspects and advertises them in some degree. The clustering techniques show that he is interested in these topics, but do not reveal his function as the CEO in these companies. However, for personalized advertisements this information is not necessary. 
+
+Then, the interest in energy and tunnels is explained by his companies SolarCity and the Boring Company. The analysis does not reveal the name of these companies but it does show their product spectrum. 
+
+The analyses in the present work reveal most of Elon Musk's interests based on his companies. Only the company Neuralink - that develops an implementable brain-machine interface - is not abstracted from any cluster. A reason is that this company was founded in 2016, and is thus not be included in many Tweets.\\
+
+All in all, it is concluded the the profile of Elon Musk based on his Twitter activity is highly accurate compared to what is known in general about his companies. This proves the applicability of text mining and unsupervised clustering techniques for the profiling of social media users. The analyses can be repeated for less known persons, and the profiling results can then for example be used for personalized advertisements.

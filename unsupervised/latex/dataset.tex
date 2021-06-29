@@ -9,7 +9,7 @@ The dataset of Elon Musk's Tweets is taken from Kaggle, see \cite{data_2020}. Th
 
 \subsection{Twitter Activity}
 
-Fig.~\ref{fig:twitter_musk} contains a screenshot of Elon Musk's Twitter profile from \date{26 June 2021}. At that date, the Twitter profile has $57.5$ million followers, and follows $108$ other Twitter users. The typical format of a Tweet is depicted in Fig.~\ref{fig:example_tweet}. A Tweet consists of a text of up to $280$ characters, and may contain URLs, referals to other Twitter users, photos, or videso. Other Twitter users can share their reaction to the Tweet by liking, Retweeting or replying to it. A Retweet shows the Tweet on the profile of the Retweeting user, and is somewhat comparable to forwarding e-mails. \\
+Fig.~\ref{fig:twitter_musk} contains a screenshot of Elon Musk's Twitter profile from \date{26 June 2021}. At that date, the Twitter profile has $57.5$ million followers, and follows $108$ other Twitter users. The typical format of a Tweet is depicted in Fig.~\ref{fig:example_tweet}. A Tweet consists of a text of up to $280$ characters, and may contain URLs, referals to other Twitter users, photos, or videos. Other Twitter users can share their reaction to the Tweet by liking, Retweeting or replying to it. A Retweet shows the Tweet on the profile of the Retweeting user, and is somewhat comparable to forwarding e-mails. \\
 
 \begin{figure}[h!]
 \centering
@@ -47,9 +47,9 @@ Elon Musk's activity on Twitter is roughly equally distributed over the $24$ hou
 
 \subsection{Interaction with Other Users \& Websites}
 
-As already explained above, \SI{64.27}{\percent} of Elon Musk's Tweets are replies to other Twitter users. First insights on Elon Musk's interests may be gained by analyzing the Twitter users that he mentions  most often. An ordered barplot of these users can be found in Fig.~\ref{fig:users}. His main interest seems to be @Tesla and related accounts like @Teslarati, and @teslaownersSV. Secondly, @SpaceX and space-related users such as @Erdayastronaut, @NASASpaceflight, and the US space agency @NASA appear commonly.\\
+As already explained above, \SI{64.27}{\percent} of Elon Musk's Tweets are replies to other Twitter users. First insights on Elon Musk's interests may be gained by analyzing the Twitter users that he mentions  most often. An ordered barplot of these users can be found in Fig.~\ref{fig:users}. His main interest seem to be @Tesla and related accounts like @Teslarati, and @teslaownersSV. Secondly, @SpaceX and space-related users such as @Erdayastronaut, @NASASpaceflight, and the US space agency @NASA appear commonly.\\
 
-Another source of information are the URLs in Elon Musk's Tweets. In total, \SI{10.00}{\percent} of his Tweets until the end of 2020 contain URLs. The corresponding barplot is reported in Fig.~\ref{fig:urls}. Note that only the domain name is reported as the focus lies on the detection of general interests. For this purpose, the analysis of specific URLs is not suitable, and would not be visualizable as a barplot. First of all, he commonly refers to social networks like Twitter itself, Youtube, and Instagram. This illustrates that he is also active (at least passively) on these platforms. Again, several URLs refer to Tesla. URLs containinig SpaceX are less common. Additionally, Elon Musk appears to be informed on economic topics as his referals to Bloomberg, Buiseness Insider, and the Wall Street Journal show.
+Another source of information are the URLs in Elon Musk's Tweets. In total, \SI{10.00}{\percent} of his Tweets until the end of 2020 contain URLs. The corresponding barplot is reported in Fig.~\ref{fig:urls}. Note that only the domain name is reported as the focus lies on the detection of general interests. For this purpose, the analysis of specific URLs is not suitable, and would not be visualizable as a barplot. First of all, he commonly refers to social networks like Twitter itself, YouTube, and Instagram. This illustrates that he is also active (at least passively) on these platforms. Again, several URLs refer to Tesla. URLs containinig SpaceX are less common. Additionally, Elon Musk appears to be informed on economic topics as his referals to Bloomberg, Buiseness Insider, and the Wall Street Journal show.
 
 \begin{figure}[h!]
 \centering
@@ -76,7 +76,7 @@ For the application of unsupervised clustering techniques in the following part 
 \item The transformation of all words to lower case because the analysis should not make a difference between upper and lower case words like \enquote{Tesla} and \enquote{tesla}.
 \item The removal of common stopwords, as reported in Fig.~\ref{fig:stopwords_en} and Fig~\ref{fig:stopwords_smart} in the Appendix. Stopwords are words that appear commonly in (english) texts, and are thus not helpful in clustering the Tweets as they do not add meaning but have mostly a grammatical function.
 \item The removal of punctuation like dots, commas, and exclamation points.	
-\item The removal of numerical digits like \enquote{12} and \enquote{7}.
+\item The removal of single standing numerical digits like \enquote{12} and \enquote{7}.
 \end{itemize}
 
 After the preprocessing, the remaining text of each Tweet is a sequence of words (that are not stopwords). All of the Tweets together contain $11572$ different words (that may occur multiple times). In Fig.~\ref{fig:word_count}, the frequency of the most common words in all preprocessed Tweets is reported. Again, the word \enquote{tesla} occurs frequently. Other common words are \enquote{car(s)} and \enquote{model}. Besides general terms, referals to rockets and space like \enquote{rocket}, \enquote{spacex}, \enquote{Mars}, and \enquote{launch} appear in several Tweets.

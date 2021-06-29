@@ -14,7 +14,7 @@ In the remaining part of the present work, whenever the document-term matrix or 
 \subsection{K-Means Clustering}\label{subsec:k_means}
 In the present work, the K-means clustering is applied on the document-term matrix, i.e. Tweets are clustered based on the occurence of words. The scope of K-means clustering is to cluster the Tweets into $K$ categories. Each Tweet is contained in exactly one cluster. The hyperparameter $K$ has to be specified prior to the application of K-means clustering. The idea is to minimize the so-called total within-cluster variation
 \begin{align*}
-	G(C1,\dots,C_K) =  \sum_{k=1}^{K} W(C_k),
+	G(C_1,\dots,C_K) =  \sum_{k=1}^{K} W(C_k),
 \end{align*}
 where $C_1,...,C_K$ are the $K$ clusters. The within-cluster variation of cluster $C_k$ is defined as
 \begin{align*}
@@ -22,7 +22,7 @@ where $C_1,...,C_K$ are the $K$ clusters. The within-cluster variation of cluste
 \end{align*}
 where $x_{ij}$ and $x_{i'j}$ are the entries of the document-term matrix $X$, and $p=140$ the number of words. In mathematical terms, K-means clustering seeks to compute
 \begin{align*}
-	\argmin_{C1,\dots,C_K} \left\{G(C1,\dots,C_K) \right\}.
+	\argmin_{C_1,\dots,C_K} \left\{G(C_1,\dots,C_K) \right\}.
 \end{align*}
 An efficient algorithm to find a local optimum of this minimization problem starts with a random allocation of the Tweets to $K$ clusters. Then, the clusters are improved iteratively until a sufficient convergence is obtained. It can be shown that each iteration of the algorithm always leads to a smaller within-cluster variation $G$.
 
